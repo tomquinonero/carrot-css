@@ -62,7 +62,7 @@ h3 {
 }
 
 img {
-  max-width: min(55rem, 100%);
+  max-width: calc(min(55rem, 100%));
 }
 
 figcaption {
