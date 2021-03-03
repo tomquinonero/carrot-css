@@ -1,7 +1,8 @@
 {
   "cssVariables.lookupFiles": [
-    "./css/colors.css",
-    "./css/variables.css",
-    "./css/themes/default.css"
-  ]
+    "./css/_colors.css",
+    "./css/_variables.css",
+    "./css/themes/_default.css"
+  ],
+  "nunjucksFormat.frontMatterData": true
 }

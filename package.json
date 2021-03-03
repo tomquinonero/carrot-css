@@ -7,9 +7,7 @@
   "license": "MIT",
   "scripts": {
     "getColors": "node cli.js colors",
-    "docs": "yarn css:watch & npx @11ty/eleventy --serve --input=./docs/ --output=./docs/_site",
-    "css:watch": "sass --watch ./css/main.scss ./_dist/main.css; cp ./_dist/main.css ./docs/css/main.css",
-    "css:build": "sass ./css/main.scss ./_dist/main.css; cp ./_dist/main.css ./docs/css/main.css"
+    "docs": "yarn eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",

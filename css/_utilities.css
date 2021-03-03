@@ -1,5 +1,185 @@
+:root {
+  --flow-space: 1em;
+  --measure: 50ch;
+}
+
 /* flow utility  */
 /* https://piccalil.li/quick-tip/flow-utility */
+
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
+}
+
+/* the stack */
+
+.stack {
+  --space: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+/* the box */
+
+.box {
+  padding: var(--size-500);
+  border: var(--border-thin) solid;
+  --color-light: var(--color-background);
+  --color-dark: var(--color-text);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+/* the center */
+
+.center {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: var(--measure);
+}
+
+/* the cluster  */
+
+.cluster {
+  --space: var(--size-500);
+  overflow: hidden;
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.cluster > * > * {
+  margin: calc(var(--space) / 2);
+}
+
+.cluster.cluster--right > * {
+  justify-content: flex-end;
+}
+
+/* The sidebar */
+
+.with-sidebar {
+  overflow: hidden;
+}
+
+.with-sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--size-500) / 2 * -1);
+}
+
+.with-sidebar > * > * {
+  margin: calc(var(--size-500) / 2);
+  flex-grow: 1;
+}
+
+.with-sidebar > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(55% - var(--size-500));
+}
+
+.with-sidebar--right {
+  overflow: hidden;
+}
+
+.with-sidebar--right > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--size-500) / 2 * -1);
+}
+
+.with-sidebar--right > * > * {
+  margin: calc(var(--size-500) / 2);
+  flex-grow: 1;
+}
+
+.with-sidebar--right > * > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(55% - var(--size-500));
+}
+
+/* The switcher */
+
+.switcher > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc((var(--size-500) / 2) * -1);
+}
+
+.switcher > * > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--measure) - (100% - var(--size-500))) * 999);
+  margin: calc(var(--size-500) / 2);
+}
+
+.switcher > * > :nth-last-child(n + 5),
+.switcher > * > :nth-last-child(n + 5) ~ * {
+  flex-basis: 100%;
+}
+
+/* the cover */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--size-500);
+}
+
+.cover > * {
+  margin-top: var(--measure);
+  margin-bottom: var(--measure);
+}
+
+.cover > :first-child:not(.centered) {
+  margin-top: 0;
+}
+
+.cover > :last-child:not(.centered) {
+  margin-bottom: 0;
+}
+
+.cover > .centered {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*  The Grid  */
+
+.grid {
+  display: grid;
+  grid-gap: var(--size-500);
+}
+
+@supports (width: calc(min(12rem, 100%))) {
+  .grid {
+    grid-template-columns: #{"repeat(auto-fit, minmax(min(12rem, 100%), 1fr))"};
+  }
 }

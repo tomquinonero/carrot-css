@@ -1,11 +1,9 @@
-const pluginSass = require('eleventy-plugin-sass')
+const pluginSass = require("eleventy-plugin-sass")
 
-const util = require('util')
-const moment = require('moment')
+const util = require("util")
+const moment = require("moment")
 
 module.exports = function (eleventyConfig) {
-  // eleventyConfig.addWatchTarget('main.css')
-
   // design images
   // eleventyConfig.addPassthroughCopy({ public: 'public' })
   // eleventyConfig.addPassthroughCopy('_dist')
@@ -17,18 +15,15 @@ module.exports = function (eleventyConfig) {
   // })
 
   eleventyConfig.addPlugin(pluginSass, {
-    // keep only "css/main.scss" in prod
-    watch: [
-      'css/main.scss',
-      'css/*.css',
-      'css/*.scss',
-      'css/**/*.css',
-      'css/**/*.scss',
-    ],
-    // watch: ["css/main.scss"],
+    watch: ["css/*.css", "css/*.scss", "css/**/*.css", "css/**/*.scss"],
     sourcemaps: true,
-    outputDir: 'docs/_site/css/',
+    outputDir: "docs/_site/css/",
   })
+
+  eleventyConfig.addWatchTarget("css")
+  eleventyConfig.addWatchTarget("./docs/")
+  eleventyConfig.addWatchTarget("docs/index.html")
+  eleventyConfig.addWatchTarget("docs/test.njk")
 
   // eleventyConfig.addFilter('console', function (value) {
   //   return util.inspect(value)
@@ -47,12 +42,11 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      output: './docs/_site/',
-      input: './docs/',
-      includes: '_includes',
-      layouts: '_layouts',
-      dataTemplateEngine: 'njk',
-      dataTemplateEngine: 'njk',
+      output: "./docs/_site/",
+      input: "./docs/",
+      includes: "_includes",
+      layouts: "_layouts",
     },
+    templateFormats: ["html", "njk"],
   }
 }
