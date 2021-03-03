@@ -1,16 +1,12 @@
 :root {
-  --flow-space: 1em;
   --measure: 50ch;
 }
 
-/* flow utility  */
-/* https://piccalil.li/quick-tip/flow-utility */
-
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
-}
-
-/* the stack */
+/* 
+The Stack
+Will stack from top to bottom
+NB: Needs a intermediate container
+*/
 
 .stack {
   --space: 1.6rem;
@@ -28,7 +24,10 @@
   margin-top: var(--space);
 }
 
-/* the box */
+/* 
+The Box
+premade box
+*/
 
 .box {
   padding: var(--size-500);
@@ -48,7 +47,10 @@
   background-color: var(--color-dark);
 }
 
-/* the center */
+/* 
+The Center
+Horizontally center en element
+ */
 
 .center {
   box-sizing: content-box;
@@ -58,7 +60,12 @@
   max-width: var(--measure);
 }
 
-/* the cluster  */
+/* 
+The Cluster
+Put element in an inline manner
+NB: Needs a intermediate container
+
+*/
 
 .cluster {
   --space: var(--size-500);
@@ -81,7 +88,10 @@
   justify-content: flex-end;
 }
 
-/* The sidebar */
+/* 
+The sidebar
+Will put content in a sidebar matter
+*/
 
 .with-sidebar {
   overflow: hidden;
@@ -125,7 +135,11 @@
   min-width: calc(55% - var(--size-500));
 }
 
-/* The switcher */
+/* 
+The switcher
+If cannot be displayed side by side, switch to top to bottom layout
+NB: Needs a intermediate container
+*/
 
 .switcher > * {
   display: flex;
@@ -144,7 +158,10 @@
   flex-basis: 100%;
 }
 
-/* the cover */
+/* 
+The cover 
+Will be always 100vh, cool for page cover
+*/
 
 .cover {
   display: flex;
@@ -171,7 +188,10 @@
   margin-bottom: auto;
 }
 
-/*  The Grid  */
+/*  
+The Grid
+Elements will wrap when less athan 12rem
+*/
 
 .grid {
   display: grid;
@@ -182,4 +202,125 @@
   .grid {
     grid-template-columns: #{"repeat(auto-fit, minmax(min(12rem, 100%), 1fr))"};
   }
+}
+
+/* 
+The frame
+Makes a fixed ratio container, perfect for img
+*/
+
+.frame {
+  --n: 9;
+  --d: 16;
+  padding-bottom: calc(var(--n) / var(--d) * 100%);
+  position: relative;
+}
+
+.frame > * {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame > img,
+.frame > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 
+The Reel
+Provides a horizontal scroll context
+*/
+
+.reel {
+  display: flex;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: var(--white) var(--black);
+}
+
+.reel::-webkit-scrollbar {
+  height: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+  background-color: var(--black);
+}
+
+.reel::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  background-image: linear-gradient(
+    var(--black) 0,
+    var(--black) 0.25rem,
+    var(--white) 0.25rem,
+    var(--white) 0.75rem,
+    var(--black) 0.75rem
+  );
+}
+
+.reel > * {
+  flex: 0 0 auto;
+}
+
+.reel > img {
+  height: 100%;
+  flex-basis: auto;
+  width: auto;
+}
+
+.reel > * + * {
+  margin-left: var(--size-500);
+}
+
+.reel.overflowing {
+  padding-bottom: var(--size-500);
+}
+
+/* 
+The Imposter
+Will ignore flow and be centered, like a modal
+*/
+
+.imposter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imposter.contain {
+  --margin: 0px;
+  overflow: auto;
+  max-width: calc(100% - (var(--margin) * 2));
+  max-height: calc(100% - (var(--margin) * 2));
+}
+
+/* 
+The Icon
+Icon size helper
+*/
+
+.icon {
+  width: 0.75em;
+  width: 1cap;
+  height: 0.75em;
+  height: 1cap;
+}
+
+.with-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.with-icon .icon {
+  margin-inline-end: 1rem;
 }

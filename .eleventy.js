@@ -21,7 +21,8 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addWatchTarget("css")
-  eleventyConfig.addWatchTarget("./docs/")
+  eleventyConfig.addWatchTarget("*.njk")
+
   eleventyConfig.addWatchTarget("docs/index.html")
   eleventyConfig.addWatchTarget("docs/test.njk")
 
