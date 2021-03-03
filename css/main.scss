@@ -1,3 +1,9 @@
-@import 'variables.css';
-@import 'colors.scss';
-@import 'themes/default.scss';
+@import 'variables';
+@import 'colors';
+@import 'themes/default';
+@import 'utilities';
+@import 'global';
+
+p {
+  font-size: 2px;
+}

@@ -6,15 +6,20 @@
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
   "scripts": {
-    "getColors": "node cli.js colors"
+    "getColors": "node cli.js colors",
+    "docs": "yarn css:watch & npx @11ty/eleventy --serve --input=./docs/ --output=./docs/_site",
+    "css:watch": "sass --watch ./css/main.scss ./_dist/main.css; cp ./_dist/main.css ./docs/css/main.css",
+    "css:build": "sass ./css/main.scss ./_dist/main.css; cp ./_dist/main.css ./docs/css/main.css"
   },
   "devDependencies": {
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "eleventy": "^1.0.6",
+    "eleventy-plugin-sass": "^1.2.0",
     "figlet": "^1.5.0",
     "minimist": "^1.2.5",
+    "moment": "^2.29.1",
     "sass": "^1.32.8",
     "tailwindcss": "^2.0.3"
   }
