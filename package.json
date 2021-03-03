@@ -1,12 +1,13 @@
 {
   "name": "carrot-css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple CSS starter, that assume as less as possible",
   "main": "index.js",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
   "scripts": {
     "getColors": "node cli.js colors",
+    "build": "node cli.js colors & node cli.js compile",
     "docs": "yarn eleventy --serve"
   },
   "devDependencies": {
@@ -18,8 +19,10 @@
     "eleventy-plugin-sass": "^1.2.0",
     "figlet": "^1.5.0",
     "minimist": "^1.2.5",
+    "modern-css-reset": "^1.4.0",
     "moment": "^2.29.1",
     "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.32.8",
     "tailwindcss": "^2.0.3"
   }

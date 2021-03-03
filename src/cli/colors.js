@@ -1,16 +1,16 @@
-var fs = require('fs')
+var fs = require("fs")
 
 // colors from tailwind CSS
-const tailwindColors = require('tailwindcss/colors')
-const chalk = require('chalk')
+const tailwindColors = require("tailwindcss/colors")
+const chalk = require("chalk")
 
-const jsColorToCSSVariable = require('../utils/jsColorsToCSSVariables')
+const jsColorToCSSVariable = require("../utils/jsColorsToCSSVariables")
 
 const createColorFile = () => {
   const colors = jsColorToCSSVariable(tailwindColors)
 
-  const colorsFilePath = './css/colors.css'
-  const cssString = `:root{\n\t${colors.join('\n\t')}\n}`
+  const colorsFilePath = "./css/_colors.css"
+  const cssString = `:root{\n\t${colors.join("\n\t")}\n}`
 
   fs.writeFile(colorsFilePath, cssString, function (err) {
     if (err) throw err

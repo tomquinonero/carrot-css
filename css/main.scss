@@ -3,3 +3,7 @@
 @import "themes/default";
 @import "utilities";
 @import "global";
+
+::selection {
+  color: red;
+}
