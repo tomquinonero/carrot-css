@@ -1,11 +1,10 @@
-var fs = require('fs')
 const chalk = require('chalk')
 const clear = require('clear')
 const figlet = require('figlet')
 // const inquirer = require('inquirer')
 
 // actions possibilities
-const createColorFile = require('./src/cli/colors')
+const createColorFile = require('./src/cli/colors').createColorFile
 
 // clear console
 clear()
@@ -22,7 +21,7 @@ const args = process.argv.slice(2)
 const possibleArguments = ['colors']
 
 if (args[0] == 'colors') {
-  createColorFile
+  createColorFile()
 } else {
   console.log(
     chalk.yellow(
