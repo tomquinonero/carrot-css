@@ -1,0 +1,7 @@
+{
+  "cssVariables.lookupFiles": [
+    "./css/colors.css",
+    "./css/variables.css",
+    "./css/themes/default.css"
+  ]
+}

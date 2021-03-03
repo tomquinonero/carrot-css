@@ -1,0 +1,5 @@
+.theme-default {
+  /* tokens for default */
+  --color-text: var(--warmGray-900);
+  --color-background: var(--cyan-100);
+}

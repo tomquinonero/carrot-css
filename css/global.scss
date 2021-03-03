@@ -1,0 +1,60 @@
+:root {
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.33rem;
+  --size-600: 1.77rem;
+  --size-700: 2.36rem;
+  --size-800: 3.15rem;
+  --size-900: 4.2rem;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  font-family: Georgia, serif;
+  padding: 2rem 0;
+}
+
+a:not([class]) {
+  color: currentColor;
+}
+
+:focus {
+  outline: 2px dashed;
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+[href]:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  line-height: 1.3;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--size-700);
+}
+
+h2 {
+  font-size: var(--size-600);
+}
+
+h3 {
+  font-size: var(--size-600);
+}

@@ -10,9 +10,7 @@ const createColorFile = () => {
   const colors = jsColorToCSSVariable(tailwindColors)
 
   const colorsFilePath = './css/colors.css'
-  const cssString = `:root{
-    ${colors.join('\n\t')}
-  }`
+  const cssString = `:root{\n\t${colors.join('\n\t')}\n}`
 
   fs.writeFile(colorsFilePath, cssString, function (err) {
     if (err) throw err
