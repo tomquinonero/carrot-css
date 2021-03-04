@@ -1,4 +1,4 @@
 {
   "tags": "page",
-  "permalink": true
+  "permalink": "/{{ page.filePathStem }}.html"
 }

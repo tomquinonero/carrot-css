@@ -1,7 +1,7 @@
 ---
 layout: "main.njk"
-permalink: /
-title: Getting Started
+title: "Getting Started"
+permalink: "/getting-started/"
 ---
 
 # Carrot CSS

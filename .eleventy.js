@@ -16,9 +16,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("**.html")
   eleventyConfig.addWatchTarget("**.md")
 
-  eleventyConfig.addShortcode("libSize", function (content) {
-    console.log(content)
-    return content
+  eleventyConfig.addFilter("console", function (value) {
+    return util.inspect(value)
   })
 
   return {

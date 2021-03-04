@@ -29,7 +29,7 @@ module.exports = (outputPath, minimize = false) => {
         console.log(chalk.green(`File size: ${fileSizeInKb}\n\n\n\n`))
         if (minimize) {
           fs.writeFile(
-            "./docs/lib_size.json",
+            "./docs/_data/libSize.json",
             `{"libSize": "${fileSizeInKb}"}`,
             () => {}
           )
