@@ -1,5 +1,6 @@
 var fs = require("fs")
 const chalk = require("chalk")
+var filesize = require("filesize")
 
 const sass = require("sass")
 const autoprefixer = require("autoprefixer")
@@ -21,7 +22,18 @@ module.exports = (outputPath, minimize = false) => {
       fs.writeFile(outputPath, result.css, function (err) {
         if (err) throw err
         console.log(chalk.green(`🎉 G O O D    N E W S 🎉\n`))
-        console.log(chalk.green(`🎉 CSS built under ${outputPath}\n\n\n`))
+        console.log(chalk.green(`🎉 CSS built under ${outputPath}\n`))
+        const stats = fs.statSync(outputPath)
+        const fileSizeInKb = filesize(stats.size, { round: 0 })
+        // we write the building size in a file to be displayed in the documentation
+        console.log(chalk.green(`File size: ${fileSizeInKb}\n\n\n\n`))
+        if (minimize) {
+          fs.writeFile(
+            "./docs/lib_size.json",
+            `{"libSize": "${fileSizeInKb}"}`,
+            () => {}
+          )
+        }
       })
     })
 }
