@@ -1,5 +1,6 @@
 <ul class="list">
-  <li><a href="/">Install</a></li>
-  <li><a href="/getting-started/">Getting Started</a></li>
-  <li><a href="/documentation/">Documentation</a></li>
+  {% set docs = collections.documentation %}
+  {% for doc_page in docs %}
+    <li><a {% if doc_page.url == page.url %}aria-current="page" {% endif %}href="{{ doc_page.url | url }}">{{doc_page.data.title}}</a></li>
+  {% endfor %}
 </ul>
