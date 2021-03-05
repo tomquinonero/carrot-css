@@ -1,0 +1,12 @@
+---
+layout: main.njk
+---
+
+<div class="with-sidebar">
+  <div>
+    {% include "examples_nav.njk" %}
+    <div class="content">
+      {{ content | safe }}
+    </div>
+  </div>
+</div>

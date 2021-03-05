@@ -1,9 +1,13 @@
 ---
-layout: "main.njk"
 title: Typography
 ---
 
 # Typography
+
+We want you to not struggle with setting nice base typographic rule.
+You should only chose your font and be good to go.
+
+## Font sizes
 
 Carrot CSS defines the default text sizes, based on a ratio between sizes. Here's a look at the default sizes:
 
@@ -23,31 +27,36 @@ There is one font for all the titles and one for the content.
 
 This is how title look and play together:
 
-<div class="grid">
-  <div>
+<div class="preview">
 
-# Title 1
+<p class="h1-like">Title 1</p>
 
-## Title 2
-
-### Title 3
-
-#### Title 4
-
-##### Title 5
-
-  </div>
-  <div>
-  
-# Title 1
 Content after an h1.
-## Title 2
+
+<p class="h2-like">Title 2</p>
+
 Content after an h2.
-### Title 3
+
+<p class="h3-like">Title 3</p>
+
 Content after an h3.
-#### Title 4
+
+<p class="h4-like">Title 4</p>
+
 Content after an h4.
-##### Title 5
+
+<p class="h5-like">Title 5</p>
+
 Content after an h5.
-  </div>
+
 </div>
+
+## Titles aliases
+
+Sometimes you need an `H2` to look like an `H3`, so Carrot CSS provides classes to help you accomplish that:
+
+<pre>
+<h2 class="h3-like">An H2 that looks like an H3</h2>
+</pre>
+
+You can use `h1-like`, `h2-like`, `h3-like`, `h4-like` and `h5-like`.

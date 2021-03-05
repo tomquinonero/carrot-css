@@ -17,7 +17,22 @@
 
   </div>
   <div class="main">
-    <h1>Typography</h1>
+    
+<div class="with-sidebar">
+  <div>
+    <ul class="list">
+  
+  
+    <li><a aria-current="page" href="/examples/typography/">Typography</a></li>
+  
+    <li><a href="/examples/">Examples</a></li>
+  
+</ul>
+    <div class="content">
+      <h1>Typography</h1>
+<p>We want you to not struggle with setting nice base typographic rule.
+You should only chose your font and be good to go.</p>
+<h2>Font sizes</h2>
 <p>Carrot CSS defines the default text sizes, based on a ratio between sizes. Here's a look at the default sizes:</p>
 <pre language="css">
 :root {
@@ -32,25 +47,26 @@
 </pre>
 <p>There is one font for all the titles and one for the content.</p>
 <p>This is how title look and play together:</p>
-<div class="grid">
-  <div>
-<h1>Title 1</h1>
-<h2>Title 2</h2>
-<h3>Title 3</h3>
-<h4>Title 4</h4>
-<h5>Title 5</h5>
-  </div>
-  <div>
-<h1>Title 1</h1>
+<div class="preview">
+<p class="h1-like">Title 1</p>
 <p>Content after an h1.</p>
-<h2>Title 2</h2>
+<p class="h2-like">Title 2</p>
 <p>Content after an h2.</p>
-<h3>Title 3</h3>
+<p class="h3-like">Title 3</p>
 <p>Content after an h3.</p>
-<h4>Title 4</h4>
+<p class="h4-like">Title 4</p>
 <p>Content after an h4.</p>
-<h5>Title 5</h5>
+<p class="h5-like">Title 5</p>
 <p>Content after an h5.</p>
+</div>
+<h2>Titles aliases</h2>
+<p>Sometimes you need an <code>H2</code> to look like an <code>H3</code>, so Carrot CSS provides classes to help you accomplish that:</p>
+<pre>
+<h2 class="h3-like">An H2 that looks like an H3</h2>
+</pre>
+<p>You can use <code>h1-like</code>, <code>h2-like</code>, <code>h3-like</code>, <code>h4-like</code> and <code>h5-like</code>.</p>
+
+    </div>
   </div>
 </div>
 

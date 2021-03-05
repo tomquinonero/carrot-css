@@ -1,0 +1,6 @@
+<ul class="list">
+  {% set examples = collections.examples %}
+  {% for example in examples %}
+    <li><a {% if example.url == page.url %}aria-current="page" {% endif %}href="{{ example.url | url }}">{{example.data.title}}</a></li>
+  {% endfor %}
+</ul>
