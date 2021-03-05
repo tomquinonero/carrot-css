@@ -1,10 +1,11 @@
 :root {
+  /* Sizes */
   --border-thin: 0.2rem;
+  --measure: 50ch;
 
-  /* fonts */
+  /* Fonts */
   --font-headings: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  /* system stack */
   --font-body: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --font-ratio: 1.33;
