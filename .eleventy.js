@@ -6,7 +6,14 @@ const { fstat } = require("fs")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSass, {
-    watch: ["css/*.css", "css/*.scss", "css/**/*.css", "css/**/*.scss"],
+    watch: [
+      "css/*.css",
+      "css/*.scss",
+      "css/**/*.css",
+      "css/**/*.scss",
+      "docs/css/*.scss",
+      "docs/css/*.css",
+    ],
     sourcemaps: true,
     outputDir: "docs/_site/css/",
   })

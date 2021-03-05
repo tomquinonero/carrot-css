@@ -24,9 +24,17 @@
     <ul class="list">
   
   
-    <li><a aria-current="page" href="/examples/typography/">Typography</a></li>
+    <li><a href="/documentation/">Documentation</a></li>
   
-    <li><a href="/examples/">Examples</a></li>
+    <li><a aria-current="page" href="/documentation/typography/">Typography</a></li>
+  
+    <li><a href="/documentation/layout-utilities/">Layout Utilities</a></li>
+  
+    <li><a href="/documentation/utilities/">Utilities</a></li>
+  
+    <li><a href="/documentation/buttons/">Buttons</a></li>
+  
+    <li><a href="/documentation/forms/">Forms</a></li>
   
 </ul>
     <div class="content">
@@ -34,7 +42,8 @@
 <p>We want you to not struggle with setting nice base typographic rule.
 You should only chose your font and be good to go.</p>
 <h2>Font sizes</h2>
-<p>Carrot CSS defines the default text sizes, based on a ratio between sizes. Here's a look at the default sizes:</p>
+<p>Carrot CSS defines the default text sizes, based on a ratio between sizes. The default ratio is <code>1.33</code>.
+Here's a look at the default sizes:</p>
 <pre><code>:root {
   --size-300: 0.75rem;
   --size-400: 1rem;
@@ -46,6 +55,7 @@ You should only chose your font and be good to go.</p>
 }
 </code></pre>
 <p>There is one font for all the titles and one for the content.</p>
+<p>You can override the ratio by changing the <code>--font-ratio</code> CSS variable.</p>
 <p>This is how title look and play together:</p>
 <div class="preview">
 <p class="h1-like">Title 1</p>
@@ -63,7 +73,7 @@ You should only chose your font and be good to go.</p>
 <p>Sometimes you need an <code>H2</code> to look like an <code>H3</code>, so Carrot CSS provides classes to help you accomplish that:</p>
 <pre><code>&lt;h2 class=&quot;h3-like&quot;&gt;An H2 that looks like an H3&lt;/h2&gt;
 </code></pre>
-<p>You can use <code>h1-like</code>, <code>h2-like</code>, <code>h3-like</code>, <code>h4-like</code> and <code>h5-like</code>.</p>
+<p>You can use <code>h1-like</code>, <code>h2-like</code>, <code>h3-like</code>, <code>h4-like</code> and <code>h5-like</code> classes to make a <em>lookalike</em> element.</p>
 
     </div>
   </div>
