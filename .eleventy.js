@@ -12,9 +12,9 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addWatchTarget("./css/")
-  eleventyConfig.addWatchTarget("**.njk")
-  eleventyConfig.addWatchTarget("**.html")
-  eleventyConfig.addWatchTarget("**.md")
+  // eleventyConfig.addWatchTarget("**.njk")
+  // eleventyConfig.addWatchTarget("**.html")
+  // eleventyConfig.addWatchTarget("**.md")
 
   eleventyConfig.addFilter("console", function (value) {
     return util.inspect(value)

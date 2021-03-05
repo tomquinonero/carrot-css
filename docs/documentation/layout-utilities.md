@@ -1,6 +1,4 @@
 ---
 layout: "documentation.njk"
-title: Documentation
+title: Layout Utilities
 ---
-
-# Carrot CSS

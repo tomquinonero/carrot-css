@@ -1,6 +1,4 @@
 ---
 layout: "documentation.njk"
-title: Documentation
+title: Buttons
 ---
-
-# Carrot CSS
