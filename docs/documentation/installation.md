@@ -36,6 +36,12 @@ import "carrot-css"
 <div class="nota-bene">
 
 Be sure to import _carrot css_ **before** any of your CSS!
-You want to be able to overwrite values without _artificially_ bumping the [selector specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity).
+You want to be able to overwrite values without _artificially_ bumping the [selector specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). In CSS, if the specificity is the same, the last declared rule is applied so you can just declare CSS variable to overwrite default.
 
 </div>
+
+## Using a CDN
+
+```
+https://cdn.jsdelivr.net/npm/carrot-css@0/dist/carrot.css
+```

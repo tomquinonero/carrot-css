@@ -24,8 +24,8 @@ const possibleArguments = ["colors"]
 if (args[0] == "colors") {
   createColorFile()
 } else if (args[0] == "compile") {
-  compileCSS("dist/carrot.css")
-  compileCSS("dist/carrot.min.css", true)
+  compileCSS("css/carrot.scss", "dist/carrot.css")
+  compileCSS("css/carrot.scss", "dist/carrot.min.css", true)
 } else {
   console.log(
     chalk.yellow(
