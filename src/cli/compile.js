@@ -8,7 +8,7 @@ const postcss = require("postcss")
 
 module.exports = (outputPath, minimize = false) => {
   var result = sass.renderSync({
-    file: "css/carrot-css.scss",
+    file: "css/carrot.scss",
     outputStyle: minimize ? "compressed" : "expanded",
   })
   postcss([autoprefixer])

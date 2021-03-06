@@ -1,10 +1,20 @@
 :root {
+  /* Sizes */
   --border-thin: 0.2rem;
+  --measure: 50ch;
+  /* Fonts */
   --font-headings: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  /* system stack */
   --font-body: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --font-ratio: 1.33;
+  --size-300: calc(var(--size-400) / var(--font-ratio));
+  --size-400: 1rem;
+  --size-500: calc(var(--size-400) * var(--font-ratio));
+  --size-600: calc(var(--size-500) * var(--font-ratio));
+  --size-700: calc(var(--size-600) * var(--font-ratio));
+  --size-800: calc(var(--size-700) * var(--font-ratio));
+  --size-900: calc(var(--size-800) * var(--font-ratio));
 }
 
 :root {
@@ -237,10 +247,6 @@
   /* tokens for default */
   --color-text: var(--warmGray-900);
   --color-background: var(--coolGray-100);
-}
-
-:root {
-  --measure: 50ch;
 }
 
 /* 
@@ -549,16 +555,6 @@ Icon size helper
           margin-inline-end: 1rem;
 }
 
-:root {
-  --size-300: 0.75rem;
-  --size-400: 1rem;
-  --size-500: 1.33rem;
-  --size-600: 1.77rem;
-  --size-700: 2.36rem;
-  --size-800: 3.15rem;
-  --size-900: 4.2rem;
-}
-
 body {
   background: var(--color-background);
   color: var(--color-text);
@@ -603,6 +599,15 @@ h1,
 h2,
 .h2-like {
   font-weight: 900;
+}
+
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like {
+  font-weight: 600;
 }
 
 h1,

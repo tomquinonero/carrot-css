@@ -2,7 +2,8 @@
   "name": "carrot-css",
   "version": "0.1.1",
   "description": "A simple CSS starter, that assume as less as possible",
-  "main": "index.js",
+  "main": "./dist/carrot.css",
+  "style": "./dist/carrot.css",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
   "scripts": {
