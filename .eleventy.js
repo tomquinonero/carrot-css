@@ -27,6 +27,13 @@ module.exports = function (eleventyConfig) {
     return util.inspect(value)
   })
 
+  function sortByOrder(values) {
+    let vals = [...values] // this *seems* to prevent collection mutation...
+    return vals.sort((a, b) => Math.sign(a.data.order - b.data.order))
+  }
+
+  eleventyConfig.addFilter("sortByOrder", sortByOrder)
+
   return {
     dir: {
       output: "./docs/_site/",

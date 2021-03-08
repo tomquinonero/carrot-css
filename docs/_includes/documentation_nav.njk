@@ -1,5 +1,5 @@
 <ul class="list">
-  {% set docs = collections.documentation %}
+  {% set docs = collections.documentation | sortByOrder %}
   {% for doc_page in docs %}
     <li><a {% if doc_page.url == page.url %}aria-current="page" {% endif %}href="{{ doc_page.url | url }}">{{doc_page.data.title}}</a></li>
   {% endfor %}
