@@ -38,10 +38,12 @@
   
     <li><a aria-current="page" href="/documentation/installation/">Installation</a></li>
   
+    <li><a href="/documentation/css-variables/">CSS Variables</a></li>
+  
 </ul>
     <div class="content">
       <h1>Installing Carrot CSS</h1>
-<p>We recommend using a package manager like <a href="http://yarn.com">yarn</a> or <a href="http://npm.org">npm</a> and install the <code>carrot-css</code> package, but you can also use our CDN.</p>
+<p>We recommend using a package manager like <a href="http://yarn.com">yarn</a> or <a href="https://www.npmjs.com/">npm</a> and keep it updated, but you can also use our CDN.</p>
 <h2>Using a package manager</h2>
 <p>Install <code>carrot-css</code> using a package manager:</p>
 <pre><code>// using yarn
@@ -59,13 +61,16 @@ npm install carrot-css
 <p>Or import it in your JS file:</p>
 <pre><code>import &quot;carrot-css&quot;
 </code></pre>
-<div class="nota-bene">
-<p>Be sure to import <em>carrot css</em> <strong>before</strong> any of your CSS!
-You want to be able to overwrite values without <em>artificially</em> bumping the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">selector specificity</a>. In CSS, if the specificity is the same, the last declared rule is applied so you can just declare CSS variable to overwrite default.</p>
-</div>
 <h2>Using a CDN</h2>
-<pre><code>https://cdn.jsdelivr.net/npm/carrot-css@0/dist/carrot.css
+<p>You can also use a CDN and get the last version:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/carrot-css@0.2.0/dist/carrot.min.css&quot;&gt;
 </code></pre>
+<div class="nota-bene">
+<p>Be sure to <em>import or load carrot css</em> <strong>before</strong> any of your CSS! <strong>It should be loaded before any CSS</strong></p>
+<p>You want to be able to overwrite values without <em>artificially</em> bumping the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">selector specificity</a>. In CSS, if the specificity is the same, the last declared rule is applied so you can just declare CSS variable to overwrite default.</p>
+</div>
+<h2>What to do now?</h2>
+<p>You should probalby overwrite some CSS variables to make it your own and you should be good to go.See more on our <a href="/getting-started/">Getting Started guide</a>, check the <a href="/documentation">Documentation</a> or just start coding 😀</p>
 
     </div>
   </div>

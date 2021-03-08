@@ -1,5 +1,6 @@
 ---
 title: Typography
+order: 40
 ---
 
 # Typography
@@ -26,7 +27,7 @@ Here's a look at the default sizes:
 
 There is one font for all the titles and one for the content.
 
-You can override the ratio by changing the `--font-ratio` CSS variable.
+You can override the ratio by changing the `--font-ratio` CSS variable. [More about CSS variables](/documentation/css-variables)
 
 This is how title look and play together:
 

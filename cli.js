@@ -1,3 +1,4 @@
+var fs = require("fs")
 const chalk = require("chalk")
 const clear = require("clear")
 const figlet = require("figlet")
@@ -6,7 +7,7 @@ const figlet = require("figlet")
 // actions possibilities
 const createColorFile = require("./src/cli/colors").createColorFile
 const compileCSS = require("./src/cli/compile")
-
+const cssToJs = require("./src/cli/css-variables").cssToJs
 // clear console
 clear()
 
@@ -26,6 +27,11 @@ if (args[0] == "colors") {
 } else if (args[0] == "compile") {
   compileCSS("css/carrot.scss", "dist/carrot.css")
   compileCSS("css/carrot.scss", "dist/carrot.min.css", true)
+} else if (args[0] == "cssToData") {
+  fs.readFile("./css/_variables.css", "utf-8", (err, cssVars) => {
+    const content = cssToJs(cssVars)
+    fs.writeFile("./docs/_data/cssVars.json", JSON.stringify(content), () => {})
+  })
 } else {
   console.log(
     chalk.yellow(
