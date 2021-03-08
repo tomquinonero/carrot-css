@@ -9,6 +9,7 @@
   --font-body: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --font-ratio: 1.33;
+  --font-line-height: 1.5;
   --size-300: calc(var(--size-400) / var(--font-ratio));
   --size-400: 1rem;
   --size-500: calc(var(--size-400) * var(--font-ratio));
@@ -16,4 +17,7 @@
   --size-700: calc(var(--size-600) * var(--font-ratio));
   --size-800: calc(var(--size-700) * var(--font-ratio));
   --size-900: calc(var(--size-800) * var(--font-ratio));
+
+  /* Spacing */
+  --space: 0.2rem;
 }
