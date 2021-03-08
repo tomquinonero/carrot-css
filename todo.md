@@ -1,5 +1,6 @@
 TODO:
 
+- proofreading
 - implements button
 - implements forms fields
 - find out tokens

@@ -46,6 +46,16 @@
 <p>Configuration is kept simple, you don't need to build anything.</p>
 <p>We just use CSS variable that you can overwrite.</p>
 <h2>What you might want to overwrite</h2>
+<p>Regarding fonts:</p>
+<ul>
+<li>You <em>should</em> start by setting <code>--font-body</code> and <code>--font-headings</code> to your visual identity. You can also keep the <a href="https://css-tricks.com/snippets/css/system-font-stack/">font sytem stack</a> on body to garantee readability and spare some sweet loading time!</li>
+<li>You <em>might</em> want to overwrite the <code>--font-ratio</code> variable to something between <code>1.1</code> and <code>1.6</code>. The font ratio is the number per which we multiply the text size to obtain the heading sizes. You can try different ratio on <a href="https://type-scale.com/">https://type-scale.com/</a>, or changing it directly on your app with your developper tool to fine-tune it.</li>
+<li>You <em>should probably not</em> change anyth of the <code>--size-300</code> to <code>--size-900</code> values as these are calculated based on <code>--font ratio</code>.</li>
+<li>You <em>should probably not</em> change the <code>--measure</code> value. It sets the maximum paragraph length, and is a nice default, <a href="/documentation/typography/">more info on the measure value on the Typography documentation page</a>.</li>
+</ul>
+<p>Regarding theming:</p>
+<pre><code>TBA
+</code></pre>
 <h2>Full list of variables</h2>
 <table>
 <thead>

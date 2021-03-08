@@ -8,6 +8,14 @@ order: 40
 We want you to not struggle with setting nice base typographic rule.
 You should only chose your font and be good to go.
 
+## The `--measure` of content
+
+This concept is largely inspired by this [readability tutorial from piccalil.li](https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website), and you can refer to the original post for more informations.
+
+The `--mesure` CSS variable hold the max width of paragraph. It garantee readability per default by limiting `p` and `li` to ~70 characters.
+
+The headings will be limited to ~30 character and that'll look great by default.
+
 ## Font sizes
 
 Carrot CSS defines the default text sizes, based on a ratio between sizes. The default ratio is `1.33`.
