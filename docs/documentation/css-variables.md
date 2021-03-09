@@ -27,7 +27,7 @@ TBA
 
 ## Full list of variables
 
-<table>
+<table class="table table__css-vars">
 <thead>
 <tr><th>Variable name</th><th>Default value</th></tr>
 </thead>
@@ -38,3 +38,9 @@ TBA
 {% endfor %}
 </tbody>
 </table>
+
+<style>
+.table__css-vars td:first-child{
+  width:25%;
+}
+</style>

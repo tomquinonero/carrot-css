@@ -1,5 +1,13 @@
+// Essentials
 @import "variables";
 @import "colors";
-@import "themes/default";
-@import "layout_utilities";
 @import "global";
+
+// Components
+@import "tables";
+
+// Utilities
+@import "layout_utilities";
+
+// Themes
+@import "themes/default";
