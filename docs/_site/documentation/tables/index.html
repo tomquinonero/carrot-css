@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/css/carrot.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Layout Utilities 🥕 Carrot CSS,The cool CSS starter</title>
+    <title>Tables 🥕 Carrot CSS,The cool CSS starter</title>
   </head>
   <body>
   <div class="header">
@@ -33,7 +33,7 @@
   
     <li><a href="/documentation/typography/">Typography</a></li>
   
-    <li><a aria-current="page" href="/documentation/layout-utilities/">Layout Utilities</a></li>
+    <li><a href="/documentation/layout-utilities/">Layout Utilities</a></li>
   
     <li><a href="/documentation/utilities/">Utilities</a></li>
   
@@ -41,11 +41,30 @@
   
     <li><a href="/documentation/forms/">Forms</a></li>
   
-    <li><a href="/documentation/tables/">Tables</a></li>
+    <li><a aria-current="page" href="/documentation/tables/">Tables</a></li>
   
 </ul>
     <div class="content stack">
-      
+      <h1 id="tables">Tables</h1>
+<blockquote>
+<p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be opt-in. Just add the base class <code>.table</code> to any table, then extend with custom styles or our various included modifier classes.</p>
+</blockquote>
+<p><em>From the <a href="https://getbootstrap.com/docs/4.0/content/tables/">Bootstrap table documentation</a></em></p>
+<p>In carrot CSS we'll act the same, so you'll need to be manually add the <code>table</code> class to the table you want to stylize.</p>
+<h2 id="examples">Examples</h2>
+<table class="table" >
+<thead>
+<tr><th>Name</th><th>Date of release</th></tr>
+</thead>
+<tbody>
+<tr><td>Master System</td><td>1985</td></tr>
+<tr><td>Mega Drive (Genesis)</td><td>1988</td></tr>
+<tr><td>Game Gear</td><td>1990</td></tr>
+<tr><td>Saturn</td><td>1994</td></tr>
+<tr><td>Dreamcast</td><td>1998</td></tr>
+</tbody>
+</table>
+
     </div>
   </div>
 </div>

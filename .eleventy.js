@@ -34,6 +34,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("sortByOrder", sortByOrder)
 
+  // markdown library
+  let markdownIt = require("markdown-it")
+  let markdownItAnchor = require("markdown-it-anchor")
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  }
+
+  let mdLibrary = markdownIt(options).use(markdownItAnchor, {})
+
+  eleventyConfig.setLibrary("md", mdLibrary)
+
   return {
     dir: {
       output: "./docs/_site/",
