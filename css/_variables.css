@@ -23,7 +23,7 @@
   --border-radius: 0.3rem;
 
   /* Animation */
-  --animation-short: 125ms;
-  --animation-medium: 250ms;
-  --animation-long: 360ms;
+  --animation-time-short: 125ms;
+  --animation-time-medium: 250ms;
+  --animation-time-long: 360ms;
 }

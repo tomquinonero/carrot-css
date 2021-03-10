@@ -19,11 +19,12 @@
 
   /* Interactive colors */
   /* Used for buttons and emphasis */
-  --color-interactive: var(--pink-600);
-  --color-interactive-light: var(--pink-500);
-  --color-interactive-lighter: var(--pink-400);
-  --color-interactive-dark: var(--pink-700);
-  --color-interactive-darker: var(--pink-800);
+  --color-interactive: var(--pink-400);
+  --color-interactive-light: var(--pink-300);
+  --color-interactive-lighter: var(--pink-200);
+  --color-interactive-dark: var(--pink-500);
+  --color-interactive-darker: var(--pink-600);
+  --color-interactive--reverse: var(--pink-50);
 
   /* Success, warning and danger color */
   /* These should not depend on the branding but should work with the background */
