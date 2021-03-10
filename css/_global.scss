@@ -8,7 +8,7 @@ body {
 }
 
 a:not([class]) {
-  color: currentColor;
+  color: var(--color-interactive);
 }
 
 :focus {
@@ -99,6 +99,10 @@ blockquote {
 ::selection {
   color: #fff;
   background: rgba(0, 0, 0, 0.99);
+}
+
+table {
+  color: var(--color-text);
 }
 
 p,

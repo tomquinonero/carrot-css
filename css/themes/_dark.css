@@ -1,0 +1,43 @@
+.theme-dark {
+  /* tokens for default */
+
+  /* Text colors */
+  --color-text: var(--warmGray-100);
+  --color-text-light: var(--warmGray-200);
+  --color-text-dark: var(--warmGray-100);
+
+  /* Background colors */
+  --color-background: var(--warmGray-800);
+  --color-background-light: var(--warmGray-900);
+  --color-background-dark: var(--warmGray-700);
+
+  /* Border colors */
+  --color-border: var(--warmGray-500);
+  --color-border-light: var(--warmGray-600);
+  --color-border-dark: var(--warmGray-400);
+
+  /* Interactive colors */
+  /* Used for buttons and emphasis */
+  --color-interactive: var(--pink-400);
+  --color-interactive-light: var(--pink-300);
+  --color-interactive-lighter: var(--pink-200);
+  --color-interactive-dark: var(--pink-500);
+  --color-interactive-darker: var(--pink-600);
+
+  /* Success, warning and danger color */
+  /* These should not depend on the branding but should work with the background */
+  --color-success: var(--green-400);
+  --color-success-light: var(--green-500);
+  --color-success-dark: var(--green-300);
+  --color-warn: var(--orange-400);
+  --color-warn-light: var(--orange-500);
+  --color-warn-dark: var(--orange-300);
+  --color-error: var(--red-400);
+  --color-error-light: var(--red-500);
+  --color-error-dark: var(--red-300);
+
+  /* Apply actual theme */
+  /* This allow using theme for just a some elements using a class */
+  background: var(--color-background);
+  color: var(--color-text);
+}
