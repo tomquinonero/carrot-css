@@ -51,9 +51,10 @@
 <blockquote>
 <p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be opt-in. Just add the base class <code>.table</code> to any table, then extend with custom styles or our various included modifier classes.</p>
 </blockquote>
-<p><em>From the <a href="https://getbootstrap.com/docs/4.0/content/tables/">Bootstrap table documentation</a></em></p>
+<p><em>From the <a href="https://getbootstrap.com/docs/5.0/content/tables/">Bootstrap table documentation</a></em></p>
 <p>In carrot CSS we'll act the same, so you'll need to be manually add the <code>table</code> class to the table you want to stylize.</p>
 <h2 id="examples">Examples</h2>
+<p>A table of sega consoles</p>
 <table class="table" >
 <thead>
 <tr><th>Name</th><th>Date of release</th></tr>
@@ -66,6 +67,21 @@
 <tr><td>Dreamcast</td><td>1998</td></tr>
 </tbody>
 </table>
+<p>Make a table vertical scrool by wrapping it in a container with the <code>reel</code> class. <a href="/documentation/layout-utilities/#the-reel">Learn more about the reel layout utility</a>.</p>
+<div class="reel">
+<table class="table text-nowrap" >
+<thead>
+<tr><th>Name</th><th>Date of release</th><th>Filler</th></tr>
+</thead>
+<tbody>
+<tr><td>Master System</td><td>1985</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Mega Drive (Genesis)</td><td>1988</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Game Gear</td><td>1990</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Saturn</td><td>1994</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Dreamcast</td><td>1998</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+</tbody>
+</table>
+</div>
 
     </div>
   </div>
