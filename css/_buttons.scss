@@ -20,6 +20,10 @@
     box-shadow var(--animation-time-short) ease-in-out;
 }
 
+// Button modifiers
+// ========
+
+// Sizes
 .button--small {
   font-size: 0.9rem;
   padding: 0.3rem 0.6rem;
@@ -30,6 +34,7 @@
   padding: 0.6rem 1.2rem;
 }
 
+// Roles (colors)
 .button--primary {
   background-color: var(--color-interactive);
   border-color: var(--color-interactive);
@@ -87,5 +92,43 @@
   outline-color: var(--color-text);
   &:hover {
     background-color: var(--color-text-light);
+  }
+}
+
+// Outline
+.button--outline {
+  background-color: transparent;
+  &.button--primary {
+    color: var(--color-interactive);
+    &:hover {
+      background-color: var(--color-interactive);
+    }
+  }
+  &.button--success {
+    color: var(--color-success);
+    &:hover {
+      background-color: var(--color-success);
+    }
+  }
+  &.button--warning {
+    color: var(--color-warn);
+    &:hover {
+      background-color: var(--color-warn);
+    }
+  }
+  &.button--danger {
+    color: var(--color-error);
+    &:hover {
+      background-color: var(--color-error);
+    }
+  }
+  &.button--primary {
+    color: var(--color-interactive);
+    &:hover {
+      background-color: var(--color-interactive);
+    }
+  }
+  &:hover {
+    color: var(--color-interactive--reverse);
   }
 }
