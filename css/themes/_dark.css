@@ -27,15 +27,15 @@
 
   /* Success, warning and danger color */
   /* These should not depend on the branding but should work with the background */
-  --color-success: var(--green-400);
-  --color-success-light: var(--green-500);
-  --color-success-dark: var(--green-300);
-  --color-warn: var(--orange-400);
-  --color-warn-light: var(--orange-500);
-  --color-warn-dark: var(--orange-300);
-  --color-error: var(--red-500);
-  --color-error-light: var(--red-600);
-  --color-error-dark: var(--red-400);
+  --color-success: var(--green-500);
+  --color-success-light: var(--green-600);
+  --color-success-dark: var(--green-400);
+  --color-warn: var(--orange-500);
+  --color-warn-light: var(--orange-600);
+  --color-warn-dark: var(--orange-400);
+  --color-error: var(--red-600);
+  --color-error-light: var(--red-700);
+  --color-error-dark: var(--red-500);
 
   /* Apply actual theme */
   /* This allow using theme for just a some elements using a class */
