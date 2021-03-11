@@ -35,6 +35,9 @@
   border-color: var(--color-interactive);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-interactive);
+  &:hover {
+    background-color: var(--color-interactive-dark);
+  }
 }
 
 .button--success {
@@ -42,6 +45,9 @@
   border-color: var(--color-success);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-success);
+  &:hover {
+    background-color: var(--color-success-dark);
+  }
 }
 
 .button--warning {
@@ -49,6 +55,9 @@
   border-color: var(--color-warn);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-warn);
+  &:hover {
+    background-color: var(--color-warn-dark);
+  }
 }
 
 .button--danger {
@@ -56,6 +65,9 @@
   border-color: var(--color-error);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-error);
+  &:hover {
+    background-color: var(--color-error-dark);
+  }
 }
 
 .button--light {
@@ -63,6 +75,9 @@
   border-color: var(--color-background-dark);
   color: var(--color-text);
   outline-color: var(--color-text);
+  &:hover {
+    background-color: var(--color-background);
+  }
 }
 
 .button--dark {
@@ -70,4 +85,7 @@
   border-color: var(--color-text);
   color: var(--color-background);
   outline-color: var(--color-text);
+  &:hover {
+    background-color: var(--color-text-light);
+  }
 }
