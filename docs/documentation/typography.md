@@ -39,7 +39,7 @@ You can override the ratio by changing the `--font-ratio` CSS variable. [More ab
 
 This is how title look and play together:
 
-<div class="preview stack">
+<div class="preview-dark stack">
 
 <p class="h1-like">Title 1</p>
 

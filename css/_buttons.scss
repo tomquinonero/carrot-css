@@ -35,6 +35,7 @@
 }
 
 // Roles (colors)
+
 .button--primary {
   background-color: var(--color-interactive);
   border-color: var(--color-interactive);
@@ -75,7 +76,7 @@
   }
 }
 
-.button--light {
+.button--neutral {
   background-color: var(--color-background-dark);
   border-color: var(--color-background-dark);
   color: var(--color-text);
@@ -85,7 +86,7 @@
   }
 }
 
-.button--dark {
+.button--reverse {
   background-color: var(--color-text);
   border-color: var(--color-text);
   color: var(--color-background);

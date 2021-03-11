@@ -35,6 +35,8 @@
   
     <li><a href="/documentation/layout-utilities/">Layout Utilities</a></li>
   
+    <li><a href="/documentation/design-tokens/">Design Tokens</a></li>
+  
     <li><a href="/documentation/utilities/">Utilities</a></li>
   
     <li><a aria-current="page" href="/documentation/buttons/">Buttons</a></li>
@@ -45,18 +47,56 @@
   
 </ul>
     <div class="content stack">
-      <div class="cluster">
-<p><button class="button">Just a button</button></p>
-<p><button class="button button--primary">Primary Button</button><button class="button button--danger">Danger Button</button><button class="button button--success">Success Button</button><button class="button button--warning">Warning Button</button><button class="button button--light">Light Button</button><button class="button button--dark">Dark Button</button></p>
+      <h1 id="buttons">Buttons</h1>
+<p>Carrot-css provides you with a <code>button</code> class for you to use. It includes different semantic buttons, some different sizes and some outline.</p>
+<p>To use them you must use the <code>button</code> class <em>in addtion</em> to any modifier you'll use. We use the <a href="http://getbem.com/introduction/">BEM methodology</a> so modifier will all start with <code>button--</code>.</p>
+<h2 id="semantic-buttons">Semantic buttons</h2>
+<p>Rather than have classes with the name of colors like <code>button-red</code>, we provide <em>semantic</em> names that define the <strong>role</strong> of the button.<br>
+A <strong>primary</strong> button will be draw attention and stand-out, while a <strong>danger</strong> should be used for <em>dangerous</em> actions like deleting an item or blocking an user. <strong>Neutral</strong> button can be use for some secondary actions that should not get the user out of his focus.<br>
+We also provides <em>warning</em>, <em>success</em> and a <em>reverse</em> button.</p>
+<p>Examples:</p>
+<div class="preview cluster">
+<p><button class="button button--neutral">Neutral Button</button><button class="button button--primary">Primary Button</button><button class="button button--danger">Danger Button</button><button class="button button--success">Success Button</button><button class="button button--warning">Warning Button</button><button class="button button--reverse">Reverse Button</button></p>
+</div>
+<pre><code class="language-html">&lt;button class=&quot;button button--neutral&quot;&gt;Neutral Button&lt;/button&gt;
+&lt;button class=&quot;button button--primary&quot;&gt;Primary Button&lt;/button&gt;
+&lt;button class=&quot;button button--danger&quot;&gt;Danger Button&lt;/button&gt;
+&lt;button class=&quot;button button--success&quot;&gt;Success Button&lt;/button&gt;
+&lt;button class=&quot;button button--warning&quot;&gt;Warning Button&lt;/button&gt;
+&lt;button class=&quot;button button--reverse&quot;&gt;Reverse Button&lt;/button&gt;
+</code></pre>
+<h2 id="other-modifiers">Other modifiers</h2>
+<p>We provide you with <code>button--small</code> and <code>button--large</code> for different sizes.</p>
+<div class="preview cluster">
+<p><button class="button button--neutral button--large">Large Button</button><button class="button button--primary button--large">Large Primary Button</button></p>
+<p><button class="button button--neutral">Default Size Button</button><button class="button button--primary">Default Size Primary Button</button></p>
+<p><button class="button button--neutral button--small">Small Button</button><button class="button button--primary button--small">Small Primary Button</button></p>
+</div>
+<p>Also you can use the <code>button--outline</code> class for an outline style. <em>Neutral and reverse buttons have no outline implementation, as it seems not needed</em>.</p>
+<div class="preview cluster">
 <p><button class="button button--outline button--primary">Primary Button</button><button class="button button--outline button--danger">Danger Button</button><button class="button button--outline button--success">Success Button</button><button class="button button--outline button--warning">Warning Button</button></p>
-<p><button class="button button--primary button--large">Button</button><button class="button button--primary button--small">Button</button></p>
 </div>
-<div class="cluster theme-dark">
-<p><button class="button">Just a button</button></p>
-<p><button class="button button--primary">Primary Button</button><button class="button button--danger">Danger Button</button><button class="button button--success">Success Button</button><button class="button button--warning">Warning Button</button><button class="button button--light">Light Button</button><button class="button button--dark">Dark Button</button></p>
-<p><button class="button button--primary button--outline">Primary Button</button><button class="button button--danger button--outline">Danger Button</button><button class="button button--success button--outline">Success Button</button><button class="button button--warning button--outline">Warning Button</button></p>
-<p><button class="button button--primary button--large">Button</button><button class="button button--primary button--small">Button</button></p>
-</div>
+<h2 id="overwrite-default-or-create-your-own-button">Overwrite default or create your own button</h2>
+<p>You might to want to create more button variants or overwrite default styles. It is made fairly simple.<br>
+This is how <code>button--primary</code> could be overwritten:</p>
+<pre><code class="language-css">.button--primary {
+  background-color: #111;
+  border-color: #000;
+  color: #fff;
+  outline-color: #111;
+}
+.button--primary:hover {
+  background-color: #222;
+}
+</code></pre>
+<p>If you want to handle the <strong>outline</strong> modifier you'll need to add the folowing to you CSS:</p>
+<pre><code class="language-css">.button--outline.button--primary {
+  color: #111;
+}
+.button--outline.button--primary:hover {
+  background-color: #111;
+}
+</code></pre>
 
     </div>
   </div>
