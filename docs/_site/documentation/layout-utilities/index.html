@@ -47,7 +47,183 @@
   
 </ul>
     <div class="content stack">
-      <h2 id="the-reel">The reel</h2>
+      <h1 id="layout-utilities">Layout utilities</h1>
+<p>Layout utilities are <strong>largely</strong> inspired from the <a href="https://every-layout.dev/">every layout book</a>.<br>
+This is great book and you should probably <a href="https://every-layout.dev/checkout/">buy it and read it</a>.<br>
+It will make you understand better how CSS works.</p>
+<p>Carrot CSS provides utilities classes that comes from the book.<br>
+No advanced documentation here, as it is available on the <a href="https://every-layout.dev/">every layout website</a>. Also there is gold free contrent there so even if you don't plan of buying the book, there is still a lot to learn!</p>
+<h2 id="the-stack">The stack</h2>
+<p>Makes items vertically stack, put an even space between them and remove top margin from first item and bottom margin from the last.<br>
+<em>You'll need an intermediate container to make it work.</em></p>
+<pre><code class="language-html">&lt;div class=&quot;stack&quot;&gt;
+  &lt;div&gt;
+    &lt;h2&gt;First item&lt;/h2&gt;
+    &lt;p&gt;Cupidatat irure mollit aute commodo.&lt;/p&gt;
+    &lt;p&gt;
+      Officia exercitation qui veniam reprehenderit pariatur laboris elit dolor
+      reprehenderit mollit laborum cupidatat labore.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Occaecat deserunt ad pariatur aute dolor laboris anim commodo exercitation
+      Lorem sint.
+    &lt;/p&gt;
+    &lt;p&gt;Officia exercitation esse veniam consequat quis eiusmod aliqua.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<div class="preview-dark stack">
+  <div>
+    <p class="h2-like">First item</p>
+    <p>Cupidatat irure mollit aute commodo.</p>
+    <p>Officia exercitation qui veniam reprehenderit pariatur laboris elit dolor reprehenderit mollit laborum cupidatat labore.</p>
+    <p>Occaecat deserunt ad pariatur aute dolor laboris anim commodo exercitation Lorem sint.</p>
+    <p>Officia exercitation esse veniam consequat quis eiusmod aliqua.</p>
+  </div>
+</div>
+<h2 id="the-box">The Box</h2>
+<p>A box. Will apply default margin, default border and a background.</p>
+<pre><code class="language-html">&lt;div class=&quot;box&quot;&gt;What's inside the box&lt;/div&gt;
+</code></pre>
+<div class="preview-dark">
+  <div class="box">
+    What's inside the box
+  </div>
+</div>
+<p><a href="https://every-layout.dev/layouts/box/">Documentation on Every Layout</a></p>
+<h2 id="the-center">The Center</h2>
+<p>Horizontally center en element. Will apply <a href="/documentation/typography/#the---measure-of-content"><code>--measure</code></a> as a max-width.</p>
+<p><a href="https://every-layout.dev/layouts/center/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<pre><code class="language-html">&lt;div class=&quot;center&quot;&gt;
+  Anim velit velit anim duis ipsum sit aliquip id labore minim ad. Labore sit id
+  laborum qui ad consequat elit esse. Incididunt esse ipsum elit proident non
+  reprehenderit. Ipsum excepteur cillum excepteur do nostrud proident deserunt
+  incididunt sint.
+&lt;/div&gt;
+</code></pre>
+<div class="preview-dark">
+  <div class="center">
+    Anim velit velit anim duis ipsum sit aliquip id labore minim ad. Labore sit id laborum qui ad consequat elit esse. Incididunt esse ipsum elit proident non reprehenderit. Ipsum excepteur cillum excepteur do nostrud proident deserunt incididunt sint.
+  </div>
+</div>
+<h2 id="the-cluster">The Cluster</h2>
+<p>Will stack item horizontally and provides consistent spacing.</p>
+<pre><code class="language-html">&lt;div class=&quot;cluster&quot;&gt;
+  &lt;div&gt;
+    &lt;img src=&quot;https://via.placeholder.com/200x200&quot; /&gt;
+    &lt;img src=&quot;https://via.placeholder.com/200x200&quot; /&gt;
+    &lt;img src=&quot;https://via.placeholder.com/200x200&quot; /&gt;
+    &lt;img src=&quot;https://via.placeholder.com/200x200&quot; /&gt;
+    &lt;img src=&quot;https://via.placeholder.com/200x200&quot; /&gt;
+    &lt;img src=&quot;https://via.placeholder.com/200x200&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<div class="preview-dark cluster">
+  <div>
+    <img src="https://via.placeholder.com/200x200"/>
+    <img src="https://via.placeholder.com/200x200"/>
+    <img src="https://via.placeholder.com/200x200"/>
+    <img src="https://via.placeholder.com/200x200"/>
+    <img src="https://via.placeholder.com/200x200"/>
+    <img src="https://via.placeholder.com/200x200"/>
+  </div>
+</div>
+<p><a href="https://every-layout.dev/layouts/cluster/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<h2 id="the-sidebar">The Sidebar</h2>
+<p>Put an element on the side.<br>
+<em>You'll need an intermediate container to make it work.</em></p>
+<pre><code class="language-html">&lt;div class=&quot;preview-dark with-sidebar&quot;&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Sidebar&lt;/h3&gt;
+      &lt;p&gt;Hey&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Main&lt;/h3&gt;
+      &lt;p&gt;
+        Deserunt et sint sunt ex veniam cupidatat esse ad ullamco culpa ullamco
+        officia. Lorem velit nostrud aute occaecat tempor ipsum consequat in
+        officia esse nisi. Officia ea consectetur nisi culpa elit ut eu mollit
+        consectetur do cillum.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<div class="preview-dark with-sidebar">
+  <div>
+    <div>
+      <h3>Sidebar</h3>
+      <p>Hey</p>
+    </div>
+    <div>
+      <h3>Main</h3>
+      <p>Deserunt et sint sunt ex veniam cupidatat esse ad ullamco culpa ullamco officia. Lorem velit nostrud aute occaecat tempor ipsum consequat in officia esse nisi. Officia ea consectetur nisi culpa elit ut eu mollit consectetur do cillum.</p>
+    </div>
+  </div>
+</div>
+<p><a href="https://every-layout.dev/layouts/sidebar/">Documentation on Every Layout</a></p>
+<h2 id="the-switcher">The Switcher</h2>
+<p>Will displayed element side to side if they all fit or vertically stacked if they don't. No weird looking middle ground.</p>
+<p><em>You'll need an intermediate container to make it work.</em></p>
+<pre><code class="language-html">&lt;div class=&quot;preview-dark stack&quot;&gt;
+  &lt;p class=&quot;h2-like&quot;&gt;If it fits&lt;/p&gt;
+  &lt;div class=&quot;switcher&quot;&gt;
+    &lt;div&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;h2-like&quot;&gt;If it does not fit&lt;/p&gt;
+  &lt;div class=&quot;switcher&quot;&gt;
+    &lt;div&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+      &lt;img src=&quot;https://via.placeholder.com/100x100&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<div class="preview-dark stack">
+  <p class="h2-like">If it fits</p>
+  <div class="switcher">
+    <div>
+      <img src="https://via.placeholder.com/100x100"/>
+      <img src="https://via.placeholder.com/100x100"/>
+    </div>
+  </div>
+  <p class="h2-like">If it does not fit</p>
+  <div class="switcher">
+    <div>
+      <img src="https://via.placeholder.com/600x600"/>
+      <img src="https://via.placeholder.com/600x600"/>
+      <img src="https://via.placeholder.com/600x600"/>
+      <img src="https://via.placeholder.com/600x600"/>
+      <img src="https://via.placeholder.com/600x600"/>
+    </div>
+  </div>
+</div>
+<p><a href="https://every-layout.dev/layouts/switcher/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<h2 id="the-cover">The Cover</h2>
+<p>Will have an height of <code>100vh</code>, useful for a section that need to cover the whole screen.</p>
+<p>As we don't want to break the layout we will not show an example here.</p>
+<p><a href="https://every-layout.dev/layouts/cover/">Documentation on Every Layout</a></p>
+<h2 id="the-grid">The Grid</h2>
+<p><a href="https://every-layout.dev/layouts/grid/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<h2 id="the-frame">The Frame</h2>
+<p><a href="https://every-layout.dev/layouts/frame/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<h2 id="the-reel">The Reel</h2>
+<p><a href="https://every-layout.dev/layouts/reel/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<h2 id="the-imposter">The Imposter</h2>
+<p><a href="https://every-layout.dev/layouts/imposter/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
+<h2 id="the-icon">The Icon</h2>
+<p><a href="https://every-layout.dev/layouts/icons/">Documentation on Every Layout (Needs the book to be purchased)</a></p>
 
     </div>
   </div>

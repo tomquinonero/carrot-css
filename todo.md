@@ -4,6 +4,8 @@ TODO:
 - implements forms fields
 - example page for layout utilities
 - default look for pre and code ?
+- disabled state for buttons
+- disabled state for form elements
 
 DONE:
 
