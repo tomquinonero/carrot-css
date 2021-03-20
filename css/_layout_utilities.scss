@@ -186,7 +186,7 @@ Will be always 100vh, cool for page cover
 
 /*  
 The Grid
-Elements will wrap when less athan 12rem
+Elements will wrap when less than 12rem
 */
 
 .grid {
@@ -206,9 +206,9 @@ Makes a fixed ratio container, perfect for img
 */
 
 .frame {
-  --n: 9;
-  --d: 16;
-  padding-bottom: calc(var(--n) / var(--d) * 100%);
+  --h: 9;
+  --w: 16;
+  padding-bottom: calc(var(--h) / var(--w) * 100%);
   position: relative;
 }
 

@@ -170,14 +170,8 @@ _You'll need an intermediate container to make it work._
   <p class="h2-like">If it does not fit</p>
   <div class="switcher">
     <div>
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
-      <img src="https://via.placeholder.com/100x100" />
+      <img src="https://via.placeholder.com/600x600" />
+      <img src="https://via.placeholder.com/600x600" />
     </div>
   </div>
 </div>
@@ -196,9 +190,6 @@ _You'll need an intermediate container to make it work._
     <div>
       <img src="https://via.placeholder.com/600x600"/>
       <img src="https://via.placeholder.com/600x600"/>
-      <img src="https://via.placeholder.com/600x600"/>
-      <img src="https://via.placeholder.com/600x600"/>
-      <img src="https://via.placeholder.com/600x600"/>
     </div>
   </div>
 </div>
@@ -215,20 +206,131 @@ As we don't want to break the layout we will not show an example here.
 
 ## The Grid
 
+A grid that will wrap elements if they are less than 12 rem.
+
+```html
+<div class="grid">
+  <div>
+    <p>
+      Tempor ipsum ex sit nostrud commodo. Adipisicing reprehenderit excepteur
+      laborum proident sunt cillum laboris cillum eu velit enim nisi. Et in
+      consectetur veniam esse consectetur proident quis labore laborum
+      consectetur ut. Ipsum pariatur pariatur adipisicing magna culpa nostrud.
+    </p>
+  </div>
+  <div>
+    <p>
+      Culpa qui irure reprehenderit ea est. Labore ullamco pariatur exercitation
+      ex. Nisi commodo exercitation ipsum deserunt ullamco ex eiusmod aute.
+    </p>
+  </div>
+  <div>
+    <p>
+      Cupidatat nisi laborum eu aute deserunt ullamco commodo elit magna dolor.
+      Aliqua laboris ut nostrud proident eu occaecat aliquip do sit irure elit.
+      Dolor ut est pariatur magna ullamco minim. Ad officia mollit incididunt
+      aute velit elit. Incididunt Lorem officia officia in duis aliquip laboris
+      laborum eiusmod tempor. Culpa exercitation aliqua minim dolore elit
+      deserunt.
+    </p>
+  </div>
+</div>
+```
+
+<div class="preview-dark grid">
+  <div>
+    <p>Tempor ipsum ex sit nostrud commodo. Adipisicing reprehenderit excepteur laborum proident sunt cillum laboris cillum eu velit enim nisi. Et in consectetur veniam esse consectetur proident quis labore laborum consectetur ut. Ipsum pariatur pariatur adipisicing magna culpa nostrud.</p>
+  </div>
+  <div>
+    <p>Culpa qui irure reprehenderit ea est. Labore ullamco pariatur exercitation ex. Nisi commodo exercitation ipsum deserunt ullamco ex eiusmod aute.</p>
+  </div>
+  <div>
+    <p>Cupidatat nisi laborum eu aute deserunt ullamco commodo elit magna dolor. Aliqua laboris ut nostrud proident eu occaecat aliquip do sit irure elit. Dolor ut est pariatur magna ullamco minim. Ad officia mollit incididunt aute velit elit. Incididunt Lorem officia officia in duis aliquip laboris laborum eiusmod tempor. Culpa exercitation aliqua minim dolore elit deserunt.</p>
+  </div>
+</div>
+
 [Documentation on Every Layout (Needs the book to be purchased)](https://every-layout.dev/layouts/grid/)
 
 ## The Frame
+
+A fixed ratio container. defaults to 16/9 but the ratio can be changed overwriting `--h` and `--w` for your frame.
+
+```html
+<div class="frame" style="background: var(--blueGray-400)">
+  <p>This content will always keep a 16/9 ratio.</p>
+</div>
+<br />
+<div class="frame" style="--h: 1; --w: 1; background: var(--blueGray-400)">
+  <p>This content will always keep a 1/1 ratio.</p>
+</div>
+```
+
+<div class="preview-dark">
+  <div class="frame" style="background: var(--blueGray-400)">
+    <p>This content will always keep a 16/9 ratio.</p>
+  </div>
+  <br>
+  <div class="frame" style="--h: 1; --w: 1; background: var(--blueGray-400)">
+    <p>This content will always keep a 1/1 ratio.</p>
+  </div>
+</div>
 
 [Documentation on Every Layout (Needs the book to be purchased)](https://every-layout.dev/layouts/frame/)
 
 ## The Reel
 
+Provides an horizontal scrolling context.
+
+```html
+<div>
+  <p>
+    Tempor ipsum ex sit nostrud commodo. Adipisicing reprehenderit excepteur
+    laborum proident sunt cillum laboris cillum eu velit enim nisi. Et in
+    consectetur veniam esse consectetur proident quis labore laborum consectetur
+    ut. Ipsum pariatur pariatur adipisicing magna culpa nostrud.
+  </p>
+</div>
+<div>
+  <p>
+    Culpa qui irure reprehenderit ea est. Labore ullamco pariatur exercitation
+    ex. Nisi commodo exercitation ipsum deserunt ullamco ex eiusmod aute.
+  </p>
+</div>
+<div>
+  <p>
+    Cupidatat nisi laborum eu aute deserunt ullamco commodo elit magna dolor.
+    Aliqua laboris ut nostrud proident eu occaecat aliquip do sit irure elit.
+    Dolor ut est pariatur magna ullamco minim. Ad officia mollit incididunt aute
+    velit elit. Incididunt Lorem officia officia in duis aliquip laboris laborum
+    eiusmod tempor. Culpa exercitation aliqua minim dolore elit deserunt.
+  </p>
+</div>
+```
+
+<div class="preview-dark reel">
+  <div>
+    <p>Tempor ipsum ex sit nostrud commodo. Adipisicing reprehenderit excepteur laborum proident sunt cillum laboris cillum eu velit enim nisi. Et in consectetur veniam esse consectetur proident quis labore laborum consectetur ut. Ipsum pariatur pariatur adipisicing magna culpa nostrud.</p>
+  </div>
+  <div>
+    <p>Culpa qui irure reprehenderit ea est. Labore ullamco pariatur exercitation ex. Nisi commodo exercitation ipsum deserunt ullamco ex eiusmod aute.</p>
+  </div>
+  <div>
+    <p>Cupidatat nisi laborum eu aute deserunt ullamco commodo elit magna dolor. Aliqua laboris ut nostrud proident eu occaecat aliquip do sit irure elit. Dolor ut est pariatur magna ullamco minim. Ad officia mollit incididunt aute velit elit. Incididunt Lorem officia officia in duis aliquip laboris laborum eiusmod tempor. Culpa exercitation aliqua minim dolore elit deserunt.</p>
+  </div>
+</div>
+
 [Documentation on Every Layout (Needs the book to be purchased)](https://every-layout.dev/layouts/reel/)
 
 ## The Imposter
 
+Will ignore the flow and be centered to the viewport. It is what you would use for a modal window.
+
+We will not provide example there to not break the layout.
+
 [Documentation on Every Layout (Needs the book to be purchased)](https://every-layout.dev/layouts/imposter/)
 
 ## The Icon
+
+Provide the `icon` class to apply to an icon and a `with-icon` to apply to the container.
 
 [Documentation on Every Layout (Needs the book to be purchased)](https://every-layout.dev/layouts/icons/)
