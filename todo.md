@@ -6,6 +6,8 @@ TODO:
 - default look for pre and code ?
 - disabled state for buttons
 - disabled state for form elements
+- README
+- shadows as vars and classes
 
 DONE:
 
