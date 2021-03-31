@@ -7,6 +7,7 @@ TODO:
 - README
 - shadows as vars and classes
 - add link to files in documentation
+- deploy docs
 
 DONE:
 
