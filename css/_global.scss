@@ -1,4 +1,7 @@
 // inspired by https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website
+html {
+  font-size: 14px;
+}
 
 body {
   background: var(--color-background);
@@ -12,8 +15,8 @@ a:not([class]) {
 }
 
 :focus {
-  outline: 2px dashed;
-  outline-offset: 0.25rem;
+  outline: var(--color-focus-outline) 2px dashed;
+  outline-offset: 0.16rem;
 }
 
 main:focus {

@@ -47,7 +47,106 @@
   
 </ul>
     <div class="content stack">
-      
+      <h1 id="forms-element-reset">Forms element reset</h1>
+<p>Carrot CSS <em>does not</em> provide any <em>pre-made</em> form fields.<br>
+That's not the goal there, if you want to build a design system or a website you probably have some design for your fields.<br>
+And you might use an external library for custom selects and such, so the approach hewre is to not interfere with that.</p>
+<p>Carrot CSS <em>does</em> provides some reset for form elements form fields look more in place.<br>
+The reset itself just give you a sane base regarding margin and flow.</p>
+<p>Here's what is done:</p>
+<ul>
+<li>No border and margin for <code>fieldset</code>, so we can use them for grouping fields without interfering with the layout</li>
+<li><code>legend</code> looks like an h3, and titles utilitites classes (<code>.h1-like</code> to <code>h5-like</code>) can also be used</li>
+<li>All fields that <em>look like</em> <code>text</code> fields have consistent padding and a <code>rem</code> defined height. They also have <code>box-sizing: border-box</code>. The <code>--form-field-height</code> can be overwritten to change that value, or even to <code>auto</code> to handle your height differently, with <code>padding-top</code> and <code>padding-bottom</code> for example</li>
+<li><code>label</code>s are <code>inline-block</code> to handle margin and such</li>
+<li><code>textarea</code> have default padding and only vertical resizing is allowed</li>
+<li><code>button</code>, <code>input[type=submit]</code> and <em>friends</em> have default padding. <a href="/documentation/buttons/">Button classes</a> can be used to stylize them further</li>
+<li><code>disabled</code> state is let to the <em>user agent</em></li>
+<li><em>No changes to <code>border</code> or <code>background</code></em>, because...<br>
+✨ <em><code>that's up to you!</code></em> ✨<br>
+<em>(and let's be frank that'll be less properties to overwrite on your end)</em></li>
+</ul>
+<form class="preview-dark">
+  <fieldset class="stack">
+    <legend>That's a default form legend</legend>
+    <div>
+      <label for="input">Example input</label>
+      <input type="text" id="input" placeholder="Example input">
+    </div>
+    <div>
+      <label for="select">Example select</label>
+      <select id="select">
+        <option value="">Choose...</option>
+        <optgroup label="Option group 1">
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+        </optgroup>
+        <optgroup label="Option group 2">
+          <option value="">Option 4</option>
+          <option value="">Option 5</option>
+          <option value="">Option 6</option>
+        </optgroup>
+      </select>
+    </div>
+    <legend class="h2-like">Legend that use the `h2-like` class to look like an h2</legend>
+    <div>
+      <label>
+        <input type="checkbox" value="">
+        Checkbox label
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="radioValue" value="option1" checked="">
+        Option one 
+      </label>
+      <label>
+        <input type="radio" name="radioValue" value="option2">
+        Option two 
+      </label>
+      <label>
+        <input type="radio" name="radioValue" value="option3" disabled="">
+        Disabled option
+      </label>
+    </div>
+    <div>
+      <label for="textarea">Example textarea</label><br/>
+      <textarea id="textarea" rows="3" style="height: 118px;"></textarea>
+    </div>
+    <div>
+      <label for="date">Example date</label>
+      <input type="date" id="date">
+    </div>
+    <div>
+      <label for="time">Example time</label>
+      <input type="time" id="time">
+    </div>
+    <div>
+      <label for="number">Example number</label>
+      <input type="number" id="number">
+    </div>
+    <div>
+      <label for="email">Example email</label>
+      <input type="email" id="email">
+    </div>
+    <div>
+      <label for="password">Example password</label>
+      <input type="password" id="password">
+    </div>
+    <div>
+      <label for="url">Example url</label>
+      <input type="url" id="url">
+    </div>
+    <div>
+      <button type="submit">Button submit</button>
+      <input type="submit" value="Input submit button">
+      <input type="button" value="Input button">
+      <button type="submit" disabled="true">Button submit</button>
+    </div>
+  </fieldset>
+</form>
+
     </div>
   </div>
 </div>

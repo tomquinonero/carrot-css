@@ -16,6 +16,7 @@
   --color-border: var(--warmGray-400);
   --color-border-light: var(--warmGray-300);
   --color-border-dark: var(--warmGray-500);
+  --color-focus-outline: rgba(0, 0, 0, 0.6);
 
   /* Interactive colors */
   /* Used for buttons and emphasis */

@@ -1,0 +1,65 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: var(--size-400);
+  line-height: inherit;
+  box-sizing: border-box;
+}
+
+// every text looking input type + selects
+select,
+input:not([type="checkbox"], [type="button"], [type="file"], [type="hidden"], [type="image"], [type="radio"], [type="range"], [type="reset"], [type="submit"]) {
+  height: var(--form-field-height);
+  padding: 0 0.8rem;
+}
+
+// Selects looks different so we use a diufferent padding
+select {
+  padding: 0 0.4rem;
+}
+
+// all buttons like stuff
+input:is([type="button"], [type="reset"], [type="submit"]),
+button:is([type="reset"], [type="submit"]) {
+  padding: 0.2rem 0.5rem;
+}
+
+// padding + vertical resize _only_
+textarea {
+  padding: 0.2rem 0.4rem;
+  resize: vertical;
+}
+
+// just in case
+option {
+  padding: 0;
+  margin: 0;
+}
+
+// can be marged easily
+label {
+  display: inline-block;
+}
+
+// don't break the flow and can be used for semantic purpose
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// looks like an h3
+legend {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-headings);
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: var(--size-600);
+  max-width: 25ch;
+}

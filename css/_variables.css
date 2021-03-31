@@ -2,6 +2,7 @@
   /* Sizes */
   --border-thin: 0.2rem;
   --measure: 50ch;
+  --form-field-height: 2rem;
 
   /* Fonts */
   --font-headings: -apple-system, BlinkMacSystemFont, avenir next, avenir,
