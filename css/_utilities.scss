@@ -18,3 +18,80 @@
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+// Font utilities
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Utility class for shadows
+
+.shadow-small {
+  box-shadow: var(--box-shadow-small);
+}
+.shadow-text-small {
+  text-shadow: var(--box-shadow-small);
+}
+
+.shadow-medium {
+  box-shadow: var(--box-shadow-medium);
+}
+.shadow-text-medium {
+  text-shadow: var(--box-shadow-medium);
+}
+
+.shadow-large {
+  box-shadow: var(--box-shadow-large);
+}
+.shadow-text-large {
+  text-shadow: var(--box-shadow-large);
+}
+
+.shadow-extra-large {
+  box-shadow: var(--box-shadow-extra-large);
+}
+.shadow-text-extra-large {
+  text-shadow: var(--box-shadow-extra-large);
+}
+
+// Utilities for font-sizes
+
+.font-size-300 {
+  font-size: var(--size-300);
+}
+
+.font-size-400 {
+  font-size: var(--size-400);
+}
+
+.font-size-500 {
+  font-size: var(--size-500);
+}
+
+.font-size-600 {
+  font-size: var(--size-600);
+}
+
+.font-size-700 {
+  font-size: var(--size-700);
+}
+
+.font-size-800 {
+  font-size: var(--size-800);
+}
+
+.font-size-900 {
+  font-size: var(--size-900);
+}
