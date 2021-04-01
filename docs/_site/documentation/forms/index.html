@@ -35,8 +35,6 @@
   
     <li><a href="/documentation/layout-utilities/">Layout Utilities</a></li>
   
-    <li><a href="/documentation/design-tokens/">Design Tokens</a></li>
-  
     <li><a href="/documentation/utilities/">Utilities</a></li>
   
     <li><a href="/documentation/buttons/">Buttons</a></li>
@@ -146,6 +144,89 @@ The reset itself just give you a sane base regarding margin and flow.</p>
     </div>
   </fieldset>
 </form>
+<pre><code class="language-html">&lt;form class=&quot;preview-dark&quot;&gt;
+  &lt;fieldset class=&quot;stack&quot;&gt;
+    &lt;legend&gt;That's a default form legend&lt;/legend&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;input&quot;&gt;Example input&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;input&quot; placeholder=&quot;Example input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;select&quot;&gt;Example select&lt;/label&gt;
+      &lt;select id=&quot;select&quot;&gt;
+        &lt;option value=&quot;&quot;&gt;Choose...&lt;/option&gt;
+        &lt;optgroup label=&quot;Option group 1&quot;&gt;
+          &lt;option value=&quot;&quot;&gt;Option 1&lt;/option&gt;
+          &lt;option value=&quot;&quot;&gt;Option 2&lt;/option&gt;
+          &lt;option value=&quot;&quot;&gt;Option 3&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label=&quot;Option group 2&quot;&gt;
+          &lt;option value=&quot;&quot;&gt;Option 4&lt;/option&gt;
+          &lt;option value=&quot;&quot;&gt;Option 5&lt;/option&gt;
+          &lt;option value=&quot;&quot;&gt;Option 6&lt;/option&gt;
+        &lt;/optgroup&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;legend class=&quot;h2-like&quot;&gt;
+      Legend that use the `h2-like` class to look like an h2
+    &lt;/legend&gt;
+    &lt;div&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; value=&quot;&quot; /&gt;
+        Checkbox label
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radioValue&quot; value=&quot;option1&quot; checked=&quot;&quot; /&gt;
+        Option one
+      &lt;/label&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radioValue&quot; value=&quot;option2&quot; /&gt;
+        Option two
+      &lt;/label&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radioValue&quot; value=&quot;option3&quot; disabled=&quot;&quot; /&gt;
+        Disabled option
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;textarea&quot;&gt;Example textarea&lt;/label&gt;&lt;br /&gt;
+      &lt;textarea id=&quot;textarea&quot; rows=&quot;3&quot; style=&quot;height: 118px;&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;date&quot;&gt;Example date&lt;/label&gt;
+      &lt;input type=&quot;date&quot; id=&quot;date&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;time&quot;&gt;Example time&lt;/label&gt;
+      &lt;input type=&quot;time&quot; id=&quot;time&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;number&quot;&gt;Example number&lt;/label&gt;
+      &lt;input type=&quot;number&quot; id=&quot;number&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;email&quot;&gt;Example email&lt;/label&gt;
+      &lt;input type=&quot;email&quot; id=&quot;email&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;password&quot;&gt;Example password&lt;/label&gt;
+      &lt;input type=&quot;password&quot; id=&quot;password&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;url&quot;&gt;Example url&lt;/label&gt;
+      &lt;input type=&quot;url&quot; id=&quot;url&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;button type=&quot;submit&quot;&gt;Button submit&lt;/button&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Input submit button&quot; /&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Input button&quot; /&gt;
+      &lt;button type=&quot;submit&quot; disabled=&quot;true&quot;&gt;Button submit&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
 
     </div>
   </div>

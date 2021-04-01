@@ -125,6 +125,25 @@ h3,
   max-width: 25ch;
 }
 
+pre {
+  max-height: 36em;
+  overflow-y: auto;
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  padding: 1.2rem;
+}
+
+code {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  border-radius: var(--border-radius);
+  line-height: 1.1;
+  vertical-align: middle;
+  font-size: 0.9em;
+}
+
 @media (min-width: 45em) {
   h1,
   .h1-like {
@@ -136,7 +155,8 @@ h3,
     font-size: var(--size-700);
   }
 
-  p {
+  p,
+  li {
     font-size: var(--size-500);
   }
 

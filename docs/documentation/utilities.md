@@ -10,12 +10,17 @@ We do not provide more of them _on purpose_, as this is not the goal of the libr
 
 ## Font Sizes
 
-Classes from `.font-size-300` to `.font-size-900` are provided to apply these font sizes.
+Classes from `font-size-300` to `font-size-900` are provided to apply these font sizes.
 
 ## Shadows
 
 Shadows for box `shadow-small`, `shadow-medium`, `shadow-large` and `shadow-extra-large` are provided.
 They also exist for text: `shadow-text-small`, `shadow-text-medium`, `shadow-text-large` and `shadow-text-extra-large`.
+
+## "Fake" Headings
+
+Sometimes an `h3` needs to look like an `h1`. Instead of breaking the HTML layout, `h1-like` from `h4-like` are provided.
+They will make anything look like an heading!
 
 ## Others
 
