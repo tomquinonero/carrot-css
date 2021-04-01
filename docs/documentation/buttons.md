@@ -54,14 +54,11 @@ Also you can use the `button--outline` class for an outline style. _Neutral and 
 
 </div>
 
-Disabled state can be apllied to the buttons via a `disabled` attribute, a `disabled` class or a `button--disabled` class:
+Disabled state can be apllied to the buttons via a `disabled` attribute, a `disabled` class or a `button--disabled` class. The preffered method should be the `disabled` **attribute** as it automatically exclude the button from keyboard navigation.
 
 <div class="preview cluster">
 
-<button disabled class="button">Button disabled</button>
-<button disabled class="button button--primary">Primary Button disabled</button>
-<button class="button button--danger disabled">Danger Button disabled</button>
-<button class="button button--success button--disabled">Success Button disabled</button>
+<button disabled class="button">Button `disabled` attribute</button><button disabled class="button button--primary">Primary Button `disabled` attribute</button><button class="button button--danger disabled">Danger Button `disabled` class</button><button class="button button--success button--disabled">Success Button `button--disabled` class</button>
 
 </div>
 

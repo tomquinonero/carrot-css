@@ -74,12 +74,9 @@ We also provides <em>warning</em>, <em>success</em> and a <em>reverse</em> butto
 <div class="preview cluster">
 <p><button class="button button--outline button--primary">Primary Button</button><button class="button button--outline button--danger">Danger Button</button><button class="button button--outline button--success">Success Button</button><button class="button button--outline button--warning">Warning Button</button></p>
 </div>
-<p>Disabled state can be apllied to the buttons via a <code>disabled</code> attribute, a <code>disabled</code> class or a <code>button--disabled</code> class:</p>
+<p>Disabled state can be apllied to the buttons via a <code>disabled</code> attribute, a <code>disabled</code> class or a <code>button--disabled</code> class. The preffered method should be the <code>disabled</code> <strong>attribute</strong> as it automatically exclude the button from keyboard navigation.</p>
 <div class="preview cluster">
-<p><button disabled class="button">Button disabled</button><br>
-<button disabled class="button button--primary">Primary Button disabled</button><br>
-<button class="button button--danger disabled">Danger Button disabled</button><br>
-<button class="button button--success button--disabled">Success Button disabled</button></p>
+<p><button disabled class="button">Button <code>disabled</code> attribute</button><button disabled class="button button--primary">Primary Button <code>disabled</code> attribute</button><button class="button button--danger disabled">Danger Button <code>disabled</code> class</button><button class="button button--success button--disabled">Success Button <code>button--disabled</code> class</button></p>
 </div>
 <pre><code class="language-html">&lt;button disabled class=&quot;button&quot;&gt;Button disabled&lt;/button&gt;
 &lt;button disabled class=&quot;button button--primary&quot;&gt;Primary Button disabled&lt;/button&gt;

@@ -41,7 +41,8 @@
   border-color: var(--color-interactive);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-interactive);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-interactive-dark);
   }
 }
@@ -51,7 +52,8 @@
   border-color: var(--color-success);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-success);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-success-dark);
   }
 }
@@ -61,7 +63,8 @@
   border-color: var(--color-warn);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-warn);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-warn-dark);
   }
 }
@@ -71,7 +74,8 @@
   border-color: var(--color-error);
   color: var(--color-interactive--reverse);
   outline-color: var(--color-error);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-error-dark);
   }
 }
@@ -81,7 +85,8 @@
   border-color: var(--color-background-dark);
   color: var(--color-text);
   outline-color: var(--color-text);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-background);
   }
 }
@@ -91,7 +96,8 @@
   border-color: var(--color-text);
   color: var(--color-background);
   outline-color: var(--color-text);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-text-light);
   }
 }
@@ -101,35 +107,41 @@
   background-color: transparent;
   &.button--primary {
     color: var(--color-interactive);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--color-interactive);
     }
   }
   &.button--success {
     color: var(--color-success);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--color-success);
     }
   }
   &.button--warning {
     color: var(--color-warn);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--color-warn);
     }
   }
   &.button--danger {
     color: var(--color-error);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--color-error);
     }
   }
   &.button--primary {
     color: var(--color-interactive);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--color-interactive);
     }
   }
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--color-interactive--reverse);
   }
 }
