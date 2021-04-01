@@ -1,7 +1,6 @@
 TODO:
 
 - proofreading
-- disabled state for buttons
 - README
 - add link to files in documentation
 - deploy docs
@@ -16,3 +15,4 @@ DONE:
 - disabled state for form elements
 - shadows as vars and classes
 - default look for pre and code ?
+- disabled state for buttons

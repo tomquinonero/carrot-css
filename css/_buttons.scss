@@ -133,3 +133,15 @@
     color: var(--color-interactive--reverse);
   }
 }
+
+// Disabled
+
+.button[disabled],
+.button:disabled,
+.button.disabled,
+.button.button--disabled {
+  cursor: initial;
+  // to avoid hover
+  pointer-events: none;
+  opacity: 0.62;
+}
