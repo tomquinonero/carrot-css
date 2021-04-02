@@ -19,33 +19,42 @@
   </ul>
 </div>
   </div>
-  <div class="main stack">
+  <div class="main page--getting-started stack">
     <h1 id="getting-started">Getting started</h1>
+<p>This is a quick guide to get started. Read the <a href="/documentation/">documentation</a> for more details.</p>
+<h2 id="step-1%3A-installation">Step 1: Installation</h2>
 <p>Start by adding this line to your <code>&lt;head&gt;</code>:</p>
 <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/carrot-css@0.2.3/dist/carrot.min.css&quot;/&gt;
 </code></pre>
 <p>You can also use a package manager, and we actually recommends that approach, <a href="/documentation/installation/">more on the Installation documentation</a>.</p>
 <p>When Carrot CSS is imported, you're all set!</p>
+<h2 id="step-2%3A-font-and-sizes">Step 2: Font and Sizes</h2>
 <p>But you might want to overwrite some CSS variables, you can do that by defining them in a <code>:root</code> selector.</p>
-<pre><code class="language-css">:root {
+<p>Here's what it would like like:</p>
+<pre><code class="language-css">:root,
+.theme-default {
   --font-headings: &quot;Your title font&quot;, &quot;And some backup ones&quot;, serif;
   --font-body: &quot;You might want to keep that one the default system font stack&quot;;
   --size-400: 1.6rem;
 }
 </code></pre>
-<p>Start by setting <code>--font-headings</code> to your visual identity.<br>
-Then you should select your base size for text by setting <code>--size-400</code> to an rem value.<br>
-It default to <code>1.4rem</code> and since the root font size is <code>10px</code>, it equals to <code>14px</code>.</p>
+<ul>
+<li><code>--font-headings</code> and <code>--font-body</code> are the font for your design</li>
+<li><code>--size-400</code> is the base size that'll be used to calculate the other <code>--size</code>s variables via the <code>--ratio</code> value. It should be using <code>rem</code>. Know that the root font size is <code>10px</code> so <code>1.4rem == 14px</code>. More about font sizes and ratio on the <a href="/documentation/typography/">Typography documentation page</a></li>
+</ul>
 <p>This should be the most of it but <a href="/documentation/css-variables/">refer to the documentation</a> for more informations.</p>
-<p>About theming, Carrot CSS use some design tokens so you'll use color named by their usage, not an actual color name.<br>
-You'll use variables named like <code>--color-text-dark</code> or <code>--color-border</code> instead of <code>--dark-blue</code> or <code>--light-blue-200</code>.<br>
-It'll make way more sense and will make the theme easily switchable!</p>
-<p>A Carrot CSS theme is actually just a list of design tokens and their values.</p>
-<p>You should read <a href="#">the theming documentation for more informations</a></p>
-<p>To use Carrot CSS you don't need to create your own theme. You can probably just overwrite the default one.</p>
-<p>The branding color or main color is named <code>interactive color</code> in a theme. An interactive color would be used for buttons, links and anything you want to stand out in your designs.<br>
-These are the default interactive colors:</p>
-<pre><code class="language-css">:root {
+<h2 id="step-3%3A-colors-and-theming">Step 3: Colors and Theming</h2>
+<p>About theming, Carrot CSS use some <strong>design tokens</strong> so you'll use color named by their <em>usage</em>, not an actual <em>color name</em>.<br>
+You'll use variables named like <code>--color-text-dark</code> or <code>--color-border</code> instead of <code>--dark-blue</code> or <code>--light-blue-200</code>.</p>
+<p>It'll make way more sense and will make the theme easily switchable!</p>
+<p><em>A Carrot CSS theme is actually just a list of design tokens and their values.</em></p>
+<p>You should read <a href="#">the theming documentation for more informations</a>.</p>
+<p>To use Carrot CSS you don't need to create your own theme. You can probably just overwrite the <code>default</code> one and the <code>dark</code> one to put it your <code>interactive</code> colors.</p>
+<p>Your <em>branding color</em> or <em>main color</em> is what we name <code>interactive</code> color in a theme.<br>
+An interactive color would be used for buttons, links and anything you want to stand out in your designs.</p>
+<p>These are how you should start:</p>
+<pre><code class="language-css">:root,
+.theme-default {
   --color-interactive: var(--pink-400);
   --color-interactive-light: var(--pink-300);
   --color-interactive-lighter: var(--pink-200);

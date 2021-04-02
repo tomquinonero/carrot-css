@@ -2,9 +2,14 @@
 layout: "main.njk"
 title: "Getting Started"
 permalink: "/getting-started/"
+containerClass: "page--getting-started"
 ---
 
 # Getting started
+
+This is a quick guide to get started. Read the [documentation](/documentation/) for more details.
+
+## Step 1: Installation
 
 Start by adding this line to your `<head>`:
 
@@ -16,37 +21,47 @@ You can also use a package manager, and we actually recommends that approach, [m
 
 When Carrot CSS is imported, you're all set!
 
+## Step 2: Font and Sizes
+
 But you might want to overwrite some CSS variables, you can do that by defining them in a `:root` selector.
 
+Here's what it would like like:
+
 ```css
-:root {
+:root,
+.theme-default {
   --font-headings: "Your title font", "And some backup ones", serif;
   --font-body: "You might want to keep that one the default system font stack";
   --size-400: 1.6rem;
 }
 ```
 
-Start by setting `--font-headings` to your visual identity.
-Then you should select your base size for text by setting `--size-400` to an rem value.
-It default to `1.4rem` and since the root font size is `10px`, it equals to `14px`.
+- `--font-headings` and `--font-body` are the font for your design
+- `--size-400` is the base size that'll be used to calculate the other `--size`s variables via the `--ratio` value. It should be using `rem`. Know that the root font size is `10px` so `1.4rem == 14px`. More about font sizes and ratio on the [Typography documentation page](/documentation/typography/)
 
 This should be the most of it but [refer to the documentation](/documentation/css-variables/) for more informations.
 
-About theming, Carrot CSS use some design tokens so you'll use color named by their usage, not an actual color name.
+## Step 3: Colors and Theming
+
+About theming, Carrot CSS use some **design tokens** so you'll use color named by their _usage_, not an actual _color name_.
 You'll use variables named like `--color-text-dark` or `--color-border` instead of `--dark-blue` or `--light-blue-200`.
+
 It'll make way more sense and will make the theme easily switchable!
 
-A Carrot CSS theme is actually just a list of design tokens and their values.
+_A Carrot CSS theme is actually just a list of design tokens and their values._
 
-You should read [the theming documentation for more informations](#)
+You should read [the theming documentation for more informations](#).
 
-To use Carrot CSS you don't need to create your own theme. You can probably just overwrite the default one.
+To use Carrot CSS you don't need to create your own theme. You can probably just overwrite the `default` one and the `dark` one to put it your `interactive` colors.
 
-The branding color or main color is named `interactive color` in a theme. An interactive color would be used for buttons, links and anything you want to stand out in your designs.
-These are the default interactive colors:
+Your _branding color_ or _main color_ is what we name `interactive` color in a theme.
+An interactive color would be used for buttons, links and anything you want to stand out in your designs.
+
+These are how you should start:
 
 ```css
-:root {
+:root,
+.theme-default {
   --color-interactive: var(--pink-400);
   --color-interactive-light: var(--pink-300);
   --color-interactive-lighter: var(--pink-200);

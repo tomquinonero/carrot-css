@@ -12,7 +12,7 @@
     <h1 class="center">Carrot CSS</h1>
     {% include "nav.njk" %}
   </div>
-  <div class="main stack">
+  <div class="main {{ containerClass }} stack">
     {{ content | safe }}
   </div>
   </body>
