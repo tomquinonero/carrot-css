@@ -5,18 +5,48 @@ order: 1
 
 # Carrot CSS
 
-A cool and small CSS starter that gets you going _fast_ and _right_.
+Carrot CSS is a **CSS Starter**, it is _not_ a framework as it does and asssume way less, but this is _not_ a reset, as it give you a sane basis for you to _write your own CSS code_.
 
-## Scope
+If you want to write your CSS but you are tired of writting the same starter code on every projects, **Carrot CSS is for you!**
+If you want to write clean CSS that _actually_ scales and you want to be sure to get of on the right foot with your CSS, **Carrot CSS is for you!**
 
-Carrot CSS is a small starter library for your projects. It contains the minimum you need to start a project.
+Carrot CSS is a stable foundation for your projects, it is lightweight and CSS only. It use CSS variables and have built-in theme support, and the whole thing is understandable and easily customizable.
+And also, _Carrot CSS don't go too far_, it only weight `4.2kB` gzipped and does just what you need, no more.
 
 This library should be used by people that actually intend to write CSS, as it is not a component library, does not offers much styling and is not an utility library.
 This is not meant to stops you from writing CSS, but to start your CSS from a right basis.
 
-It is not meant to be a component library neither. Just some default style, some wwisely named design tokens and few cool classes.
+## The three components of Carrot CSS
 
-🔮 _Carrot CSS is JS agnostic_ 🔮
+Carrot CSS code can be sorted into three main components:
+
+<div class="grid">
+<div>
+
+### Style reboot
+
+- A modern CSS reset
+- The "system font stack" by default
+- Forms element reboot so they are consistent and ready to customize
+</div>
+<div>
+
+### Sane base
+
+- All the CSS variables needed to get start, well named
+- A great typography sizing system based on a changeable ratio
+- A theming support, with light and dark themes built-in
+</div>
+<div>
+
+### Utilities
+
+- A great color palette to pick from
+- Layout utilities so you don't have to write the same concepts agin and agin
+- Hand picked utilities
+- Buttons you can chose from
+</div>
+</div>
 
 ## What's inside ?
 
@@ -32,7 +62,7 @@ These helps you going faster. Great layout utilities from [Every Layout](https:/
 
 We use CSS Variables to store palette color from _tailwind_, because they are nice. .
 
-But we love how the design tokens gives you felxibility so we are _not_ using these palette c olors directly in the CSS, but rather from the **Design Tokens** defined in the theme file.
+But we love how the design tokens gives you felxibility so we are _not_ using these palette colors directly in the CSS, but rather from the **Design Tokens** defined in the theme file.
 A **theme** is a _group of CSS variables_ that defines colors for the application.
 The tokens that are not related to colors exists also as CSS variables.
 To configure the tokens, you can use our [Variables template](#) that you can use to overwrite variables.
