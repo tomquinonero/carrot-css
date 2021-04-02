@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/css/carrot.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Theming 🥕 Carrot CSS,The cool CSS starter</title>
+    <title>Color and Theming 🥕 Carrot CSS,The cool CSS starter</title>
   </head>
   <body>
   <div class="header theme-dark stack">
@@ -32,7 +32,7 @@
   
     <li><a href="/documentation/css-variables/">CSS Variables</a></li>
   
-    <li><a aria-current="page" href="/documentation/theming/">Theming</a></li>
+    <li><a aria-current="page" href="/documentation/theming/">Color and Theming</a></li>
   
     <li><a href="/documentation/typography/">Typography</a></li>
   
@@ -48,7 +48,49 @@
   
 </ul>
     <div class="documentation__content stack">
-      <h1 id="theming">Theming</h1>
+      <h1 id="color-and-theming">Color and Theming</h1>
+<p>Carrot CSS embrace the concept of <strong>Design Tokens</strong>, a concept introduced by <a href="https://twitter.com/jina">@jina</a> and you can read more about it there <a href="https://css-tricks.com/what-are-design-tokens/">on this post</a> or check what <a href="https://spectrum.adobe.com/page/design-tokens/">how Adobe handles their design tokens</a>.</p>
+<blockquote>
+<p>Design tokens are all the values needed to construct and maintain a design system — spacing, color, typography, object styles, animation, etc. — represented as data. These can represent anything defined by design: a color as a RGB value, an opacity as a number, an animation ease as Bezier coordinates. They’re used in place of hard-coded values in order to ensure flexibility and unity across all product experiences.</p>
+</blockquote>
+<p><em>From the <a href="https://spectrum.adobe.com/page/design-tokens/">Design tokens documentation from Adobe design system</a></em></p>
+<p>Carrot CSS use design tokens so you'll use color named by their <em>usage</em>, not an actual <em>color name</em>.<br>
+You'll use variables named like <code>--color-text-dark</code> or <code>--color-border</code> instead of <code>--dark-blue</code> or <code>--light-blue-200</code>.</p>
+<p>To make it to <em>your</em> colors, you can create a theme or edit the existing ones, <code>default</code> and <code>dark</code>.</p>
+<h2 id="the-simple-way%3A-customize-existing-themes">The simple way: Customize existing themes</h2>
+<p>Before thinking of creating a <em>full</em> theme, you might want to just overwrite the existing colors that you need to overwrite. Most likely the <code>interactive</code> variables.<br>
+Your <em>branding color</em> or <em>main color</em> is what we name <code>interactive</code> color in a theme.<br>
+An interactive color would be used for buttons, links and anything you want to stand out in your designs.</p>
+<p>This is how you can overwrite the <code>default</code> theme:</p>
+<pre><code class="language-css">:root,
+.theme-default {
+  --color-interactive: var(--pink-400);
+  --color-interactive-light: var(--pink-300);
+  --color-interactive-lighter: var(--pink-200);
+  --color-interactive-dark: var(--pink-500);
+  --color-interactive-darker: var(--pink-600);
+  --color-interactive--reverse: var(--pink-50);
+}
+</code></pre>
+<p>And this is how you can overwrite the <code>dark</code> one:</p>
+<pre><code class="language-css">.theme-dark {
+  --color-interactive: var(--pink-400);
+  --color-interactive-light: var(--pink-300);
+  --color-interactive-lighter: var(--pink-200);
+  --color-interactive-dark: var(--pink-500);
+  --color-interactive-darker: var(--pink-600);
+  --color-interactive--reverse: var(--pink-50);
+}
+</code></pre>
+<p>When you have theme you can use them by using the <code>theme-default</code> or <code>theme-dark</code> on the element you need to theme.</p>
+<div class="preview theme-dark stack">
+  <div class="box center">  
+    This block is using the dark theme
+  </div>
+  <div class="box center theme-default">  
+    This one is using the default theme
+  </div>
+</div>
 
     </div>
   </div>
