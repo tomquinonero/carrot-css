@@ -12,9 +12,11 @@ You should only chose your font and be good to go.
 
 This concept is largely inspired by this [readability tutorial from piccalil.li](https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website), and you can refer to the original post for more informations.
 
-The `--mesure` CSS variable hold the max width of paragraph. It garantee readability per default by limiting `p` and `li` to ~70 characters.
+The `--mesure` CSS variable hold the max width of paragraph. It garantee readability per default by limiting `p` and `li` to ~70 characters. It is set by default to `60ch`.
 
 The headings will be limited to ~30 character and that'll look great by default.
+
+You might not want that behavior, for that you can declare `--mesure: auto;` in your `:root` selector.
 
 ## Font sizes
 
