@@ -110,19 +110,19 @@ table {
 
 p,
 li {
-  max-width: 60ch;
+  max-width: var(--measure);
 }
 
 h1,
 .h1-like {
-  max-width: 15ch;
+  max-width: calc(var(--measure) / 4);
 }
 
 h2,
 .h2-like,
 h3,
 .h3-like {
-  max-width: 25ch;
+  max-width: calc(var(--measure) / 2.2);
 }
 
 pre {
@@ -166,6 +166,6 @@ code {
 
   blockquote p {
     font-size: var(--size-600);
-    max-width: 40ch;
+    max-width: calc(var(--measure) * 0.666);
   }
 }
