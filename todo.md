@@ -4,6 +4,8 @@ TODO:
 - README
 - add link to files in documentation
 - deploy docs
+- build without buttons? without colors?
+- theming
 
 DONE:
 

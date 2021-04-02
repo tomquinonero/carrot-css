@@ -1,6 +1,6 @@
 // inspired by https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website
 html {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 body {
@@ -8,6 +8,7 @@ body {
   color: var(--color-text);
   line-height: var(--font-line-height);
   font-family: var(--font-body);
+  font-size: var(--size-400);
 }
 
 a:not([class]) {

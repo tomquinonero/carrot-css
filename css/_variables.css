@@ -12,7 +12,7 @@
   --font-ratio: 1.33;
   --font-line-height: 1.5;
   --size-300: calc(var(--size-400) / var(--font-ratio));
-  --size-400: 1rem;
+  --size-400: 1.4rem;
   --size-500: calc(var(--size-400) * var(--font-ratio));
   --size-600: calc(var(--size-500) * var(--font-ratio));
   --size-700: calc(var(--size-600) * var(--font-ratio));

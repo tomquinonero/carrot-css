@@ -19,9 +19,43 @@
   </ul>
 </div>
   </div>
-  <div class="main">
+  <div class="main stack">
     <h1 id="getting-started">Getting started</h1>
-<p>After <a href="/documentation/installation/">Installation</a> you probably want to overwrite some CSS variables.</p>
+<p>Start by adding this line to your <code>&lt;head&gt;</code>:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/carrot-css@0.2.3/dist/carrot.min.css&quot;/&gt;
+</code></pre>
+<p>You can also use a package manager, and we actually recommends that approach, <a href="/documentation/installation/">more on the Installation documentation</a>.</p>
+<p>When Carrot CSS is imported, you're all set!</p>
+<p>But you might want to overwrite some CSS variables, you can do that by defining them in a <code>:root</code> selector.</p>
+<pre><code class="language-css">:root {
+  --font-headings: &quot;Your title font&quot;, &quot;And some backup ones&quot;, serif;
+  --font-body: &quot;You might want to keep that one the default system font stack&quot;;
+  --size-400: 1.6rem;
+}
+</code></pre>
+<p>Start by setting <code>--font-headings</code> to your visual identity.<br>
+Then you should select your base size for text by setting <code>--size-400</code> to an rem value.<br>
+It default to <code>1.4rem</code> and since the root font size is <code>10px</code>, it equals to <code>14px</code>.</p>
+<p>This should be the most of it but <a href="/documentation/css-variables/">refer to the documentation</a> for more informations.</p>
+<p>About theming, Carrot CSS use some design tokens so you'll use color named by their usage, not an actual color name.<br>
+You'll use variables named like <code>--color-text-dark</code> or <code>--color-border</code> instead of <code>--dark-blue</code> or <code>--light-blue-200</code>.<br>
+It'll make way more sense and will make the theme easily switchable!</p>
+<p>A Carrot CSS theme is actually just a list of design tokens and their values.</p>
+<p>You should read <a href="#">the theming documentation for more informations</a></p>
+<p>To use Carrot CSS you don't need to create your own theme. You can probably just overwrite the default one.</p>
+<p>The branding color or main color is named <code>interactive color</code> in a theme. An interactive color would be used for buttons, links and anything you want to stand out in your designs.<br>
+These are the default interactive colors:</p>
+<pre><code class="language-css">:root {
+  --color-interactive: var(--pink-400);
+  --color-interactive-light: var(--pink-300);
+  --color-interactive-lighter: var(--pink-200);
+  --color-interactive-dark: var(--pink-500);
+  --color-interactive-darker: var(--pink-600);
+  --color-interactive--reverse: var(--pink-50);
+}
+</code></pre>
+<p>In this example we use the existing colors from the existing palette included in Carrot CSS, and we set <code>light</code>, <code>lighter</code>, <code>dark</code> and <code>darker</code> for different constrasts. The <code>--color-interactive--reverse</code> will mostly be used for text having the <code>--color-interactive</code> as a background.<br>
+Here we used <code>pink-50</code> that is almost white, but still have that small saturation that will make it look better that pure <code>#fff</code>.</p>
 
   </div>
   </body>
