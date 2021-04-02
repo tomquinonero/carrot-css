@@ -1,3 +1,13 @@
+:root {
+  --content-margin-top: 2rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .preview {
   padding: 1.8rem;
 }
@@ -7,11 +17,29 @@
   padding: 1.8rem;
 }
 
+.header {
+  box-shadow: var(--box-shadow-medium);
+}
+
 .main-nav {
   ul {
     padding: 0;
     list-style-type: none;
     margin: 2rem 0;
   }
-  margin-bottom: 1.6rem;
+}
+
+.documentation__navigation {
+  padding: 2rem;
+  padding-top: calc(0.8rem + var(--content-margin-top));
+  padding-right: 2.8rem;
+  list-style-type: none;
+  background-color: var(--color-background-dark);
+  box-shadow: var(--box-shadow-small) inset;
+  border-right: 1px solid var(--color-border-light);
+}
+
+.documentation__content {
+  padding-top: var(--content-margin-top);
+  padding-bottom: 6em;
 }
