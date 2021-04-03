@@ -6,10 +6,11 @@ title: Welcome
 
 <div class="center">
   <div class="box" markdown="1">
-    
-    # Carrot CSS
-    ### The CSS library that gives you a good starting, some theming capabilities, the best utilities and all that in only `{{ libSize.libSize }}`!
-    
+
+# Carrot CSS
+
+### The CSS library that gives you a good starting, some theming capabilities, the best utilities and all that in only `{{ libSize.libSize }}`!
+
   </div>
 </div>
 
