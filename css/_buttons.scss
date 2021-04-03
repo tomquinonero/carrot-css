@@ -2,7 +2,7 @@
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: var(--size-500);
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -25,12 +25,12 @@
 
 // Sizes
 .button--small {
-  font-size: 0.9rem;
+  font-size: var(--size-400);
   padding: 0.3rem 0.6rem;
 }
 
 .button--large {
-  font-size: 1.1rem;
+  font-size: var(--size-600);
   padding: 0.6rem 1.2rem;
 }
 
