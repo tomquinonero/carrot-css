@@ -1,11 +1,18 @@
 {
   "name": "carrot-css",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A simple CSS starter, that assume as less as possible",
   "main": "./dist/carrot.css",
   "style": "./dist/carrot.css",
   "author": "Tom Quinonero <tomquinonero@hey.com>",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomquinonero/carrot-css/"
+  },
   "scripts": {
     "getColors": "node cli.js colors",
     "build": "node cli.js colors & node cli.js compile",
