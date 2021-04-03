@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/carrot.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Installation 🥕 Carrot CSS,The cool CSS starter</title>
+  </head>
+  <body>
+  <div class="header theme-dark stack">
+    <h1 class="center">Carrot CSS</h1>
+    <div class="main-nav cluster">
+  <ul class="list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/getting-started/">Getting Started</a></li>
+    <li><a href="/documentation/">Documentation</a></li>
+    <li><a href="/examples/">Examples</a></li>
+  </ul>
+</div>
+  </div>
+  <div class="main  stack">
+    
+<div class="documentation with-sidebar">
+  <div>
+    <ul class="documentation__navigation list">
+  
+  
+    <li><a href="/carrot-css/documentation/">Getting started</a></li>
+  
+    <li><a aria-current="page" href="/carrot-css/documentation/installation/">Installation</a></li>
+  
+    <li><a href="/carrot-css/documentation/css-variables/">CSS Variables</a></li>
+  
+    <li><a href="/carrot-css/documentation/theming/">Color and Theming</a></li>
+  
+    <li><a href="/carrot-css/documentation/typography/">Typography</a></li>
+  
+    <li><a href="/carrot-css/documentation/layout-utilities/">Layout Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/utilities/">Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/buttons/">Buttons</a></li>
+  
+    <li><a href="/carrot-css/documentation/forms/">Forms</a></li>
+  
+    <li><a href="/carrot-css/documentation/tables/">Tables</a></li>
+  
+</ul>
+    <div class="documentation__content stack">
+      <h1 id="installing-carrot-css">Installing Carrot CSS</h1>
+<p>We recommend using a package manager like <a href="http://yarn.com">yarn</a> or <a href="https://www.npmjs.com/">npm</a> and keep it updated, but you can also use our CDN.</p>
+<h2 id="using-a-package-manager">Using a package manager</h2>
+<p>Install <code>carrot-css</code> using a package manager:</p>
+<pre><code>// using yarn
+yarn add carrot-css
+
+// using npm
+npm install carrot-css
+</code></pre>
+<p>Then you can import it in your SASS files:</p>
+<pre><code>// Depending on your stack, one of these lines will work
+@import 'node_modules/carrot-css/dist/carrot.css'
+@import 'carrot-css/dist/carrot.css'
+@import url(&quot;~carrot-css&quot;);
+</code></pre>
+<p>Or import it in your JS file:</p>
+<pre><code>import &quot;carrot-css&quot;
+</code></pre>
+<h2 id="using-a-cdn">Using a CDN</h2>
+<p>You can also use a CDN and get the last version:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/carrot-css@0.2.0/dist/carrot.min.css&quot;&gt;
+</code></pre>
+<div class="nota-bene">
+<p>Be sure to <em>import or load carrot css</em> <strong>before</strong> any of your CSS! <strong>It should be loaded before any CSS</strong></p>
+<p>You want to be able to overwrite values without <em>artificially</em> bumping the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">selector specificity</a>. In CSS, if the specificity is the same, the last declared rule is applied so you can just declare CSS variable to overwrite default.</p>
+</div>
+<h2 id="what-to-do-now%3F">What to do now?</h2>
+<p>You should probalby overwrite some CSS variables to make it your own and you should be good to go.See more on our <a href="/getting-started/">Getting Started guide</a>, check the <a href="/documentation">Documentation</a> or just start coding 😀</p>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  </body>
+</html>

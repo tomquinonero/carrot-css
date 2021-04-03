@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/carrot.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Tables 🥕 Carrot CSS,The cool CSS starter</title>
+  </head>
+  <body>
+  <div class="header theme-dark stack">
+    <h1 class="center">Carrot CSS</h1>
+    <div class="main-nav cluster">
+  <ul class="list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/getting-started/">Getting Started</a></li>
+    <li><a href="/documentation/">Documentation</a></li>
+    <li><a href="/examples/">Examples</a></li>
+  </ul>
+</div>
+  </div>
+  <div class="main  stack">
+    
+<div class="documentation with-sidebar">
+  <div>
+    <ul class="documentation__navigation list">
+  
+  
+    <li><a href="/carrot-css/documentation/">Getting started</a></li>
+  
+    <li><a href="/carrot-css/documentation/installation/">Installation</a></li>
+  
+    <li><a href="/carrot-css/documentation/css-variables/">CSS Variables</a></li>
+  
+    <li><a href="/carrot-css/documentation/theming/">Color and Theming</a></li>
+  
+    <li><a href="/carrot-css/documentation/typography/">Typography</a></li>
+  
+    <li><a href="/carrot-css/documentation/layout-utilities/">Layout Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/utilities/">Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/buttons/">Buttons</a></li>
+  
+    <li><a href="/carrot-css/documentation/forms/">Forms</a></li>
+  
+    <li><a aria-current="page" href="/carrot-css/documentation/tables/">Tables</a></li>
+  
+</ul>
+    <div class="documentation__content stack">
+      <h1 id="tables">Tables</h1>
+<blockquote>
+<p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be opt-in. Just add the base class <code>.table</code> to any table, then extend with custom styles or our various included modifier classes.</p>
+</blockquote>
+<p><em>From the <a href="https://getbootstrap.com/docs/5.0/content/tables/">Bootstrap table documentation</a></em></p>
+<p>In carrot CSS we'll act the same, so you'll need to be manually add the <code>table</code> class to the table you want to stylize.</p>
+<h2 id="examples">Examples</h2>
+<p>A table of sega consoles</p>
+<table class="table" >
+<thead>
+<tr><th>Name</th><th>Date of release</th></tr>
+</thead>
+<tbody>
+<tr><td>Master System</td><td>1985</td></tr>
+<tr><td>Mega Drive (Genesis)</td><td>1988</td></tr>
+<tr><td>Game Gear</td><td>1990</td></tr>
+<tr><td>Saturn</td><td>1994</td></tr>
+<tr><td>Dreamcast</td><td>1998</td></tr>
+</tbody>
+</table>
+<p>Make a table vertical scrool by wrapping it in a container with the <code>reel</code> class. <a href="/documentation/layout-utilities/#the-reel">Learn more about the reel layout utility</a>.</p>
+<div class="reel">
+<table class="table text-nowrap" >
+<thead>
+<tr><th>Name</th><th>Date of release</th><th>Filler</th></tr>
+</thead>
+<tbody>
+<tr><td>Master System</td><td>1985</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Mega Drive (Genesis)</td><td>1988</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Game Gear</td><td>1990</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Saturn</td><td>1994</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+<tr><td>Dreamcast</td><td>1998</td><td>Some quite long text that will surely make the table bigger than the container. Let's make sure this text is long enough for the largest screens like 1440p or 4k or even the brand new 8k screen size, but you'll probably need a beefy GPU anyway.</td></tr>
+</tbody>
+</table>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  </body>
+</html>

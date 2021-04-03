@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/carrot.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>CSS Variables 🥕 Carrot CSS,The cool CSS starter</title>
+  </head>
+  <body>
+  <div class="header theme-dark stack">
+    <h1 class="center">Carrot CSS</h1>
+    <div class="main-nav cluster">
+  <ul class="list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/getting-started/">Getting Started</a></li>
+    <li><a href="/documentation/">Documentation</a></li>
+    <li><a href="/examples/">Examples</a></li>
+  </ul>
+</div>
+  </div>
+  <div class="main  stack">
+    
+<div class="documentation with-sidebar">
+  <div>
+    <ul class="documentation__navigation list">
+  
+  
+    <li><a href="/carrot-css/documentation/">Getting started</a></li>
+  
+    <li><a href="/carrot-css/documentation/installation/">Installation</a></li>
+  
+    <li><a aria-current="page" href="/carrot-css/documentation/css-variables/">CSS Variables</a></li>
+  
+    <li><a href="/carrot-css/documentation/theming/">Color and Theming</a></li>
+  
+    <li><a href="/carrot-css/documentation/typography/">Typography</a></li>
+  
+    <li><a href="/carrot-css/documentation/layout-utilities/">Layout Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/utilities/">Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/buttons/">Buttons</a></li>
+  
+    <li><a href="/carrot-css/documentation/forms/">Forms</a></li>
+  
+    <li><a href="/carrot-css/documentation/tables/">Tables</a></li>
+  
+</ul>
+    <div class="documentation__content stack">
+      <h1 id="css-variables">CSS variables</h1>
+<p>Configuration is kept simple, you don't need to build anything.</p>
+<p>We just use CSS variable that you can overwrite.</p>
+<h2 id="what-you-might-want-to-overwrite">What you might want to overwrite</h2>
+<p>Regarding fonts:</p>
+<ul>
+<li>You <em>should</em> start by setting <code>--font-body</code> and <code>--font-headings</code> to your visual identity. You can also keep the <a href="https://css-tricks.com/snippets/css/system-font-stack/">font sytem stack</a> on body to garantee readability and spare some sweet loading time!</li>
+<li>You <em>might</em> want to overwrite the <code>--font-ratio</code> variable to something between <code>1.1</code> and <code>1.6</code>. The font ratio is the number per which we multiply the text size to obtain the heading sizes. You can try different ratio on <a href="https://type-scale.com/">https://type-scale.com/</a>, or changing it directly on your app with your developper tool to fine-tune it.</li>
+<li>You <em>might</em> want to overwrite <code>--font-line-height</code> to something else than <code>1.5</code>. But don't go too crazy there! You should keep it between <code>1.3</code> and <code>1.65</code> for body text.</li>
+<li>You <em>should probably not</em> change anyth of the <code>--size-300</code> to <code>--size-900</code> values as these are calculated based on <code>--font ratio</code>.</li>
+<li>You <em>should probably not</em> change the <code>--measure</code> value. It sets the maximum paragraph length, and is a nice default, <a href="/documentation/typography/">more info on the measure value on the Typography documentation page</a>.</li>
+</ul>
+<p>Regarding theming:</p>
+<pre><code>TBA
+</code></pre>
+<h2 id="full-list-of-variables">Full list of variables</h2>
+<table class="table table__css-vars">
+<thead>
+<tr><th>Variable name</th><th>Default value</th></tr>
+</thead>
+<tbody>
+<tr> <td>--border-thin</td><td>0.2rem</td></tr> 
+<tr> <td>--measure</td><td>60ch</td></tr> 
+<tr> <td>--form-field-height</td><td>2rem</td></tr> 
+<tr> <td>--font-headings</td><td>-apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif</td></tr> 
+<tr> <td>--font-body</td><td>-apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif</td></tr> 
+<tr> <td>--font-ratio</td><td>1.33</td></tr> 
+<tr> <td>--font-line-height</td><td>1.5</td></tr> 
+<tr> <td>--size-300</td><td>calc(var(--size-400) / var(--font-ratio))</td></tr> 
+<tr> <td>--size-400</td><td>1.4rem</td></tr> 
+<tr> <td>--size-500</td><td>calc(var(--size-400) * var(--font-ratio))</td></tr> 
+<tr> <td>--size-600</td><td>calc(var(--size-500) * var(--font-ratio))</td></tr> 
+<tr> <td>--size-700</td><td>calc(var(--size-600) * var(--font-ratio))</td></tr> 
+<tr> <td>--size-800</td><td>calc(var(--size-700) * var(--font-ratio))</td></tr> 
+<tr> <td>--size-900</td><td>calc(var(--size-800) * var(--font-ratio))</td></tr> 
+<tr> <td>--space</td><td>0.2rem</td></tr> 
+<tr> <td>--border-radius</td><td>0.3rem</td></tr> 
+<tr> <td>--animation-time-short</td><td>125ms</td></tr> 
+<tr> <td>--animation-time-medium</td><td>250ms</td></tr> 
+<tr> <td>--animation-time-long</td><td>360ms</td></tr> 
+<tr> <td>--box-shadow-small</td><td>0 1px 2px 0 rgba(0, 0, 0, 0.05)</td></tr> 
+<tr> <td>--box-shadow-medium</td><td>0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06)</td></tr> 
+<tr> <td>--box-shadow-large</td><td>0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05)</td></tr> 
+<tr> <td>--box-shadow-extra-large</td><td>0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04)</td></tr> 
+</tbody>
+</table>
+<style>
+.table__css-vars td:first-child{
+  width:25%;
+}
+</style>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  </body>
+</html>

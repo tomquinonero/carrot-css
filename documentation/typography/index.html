@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/carrot.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Typography 🥕 Carrot CSS,The cool CSS starter</title>
+  </head>
+  <body>
+  <div class="header theme-dark stack">
+    <h1 class="center">Carrot CSS</h1>
+    <div class="main-nav cluster">
+  <ul class="list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/getting-started/">Getting Started</a></li>
+    <li><a href="/documentation/">Documentation</a></li>
+    <li><a href="/examples/">Examples</a></li>
+  </ul>
+</div>
+  </div>
+  <div class="main  stack">
+    
+<div class="documentation with-sidebar">
+  <div>
+    <ul class="documentation__navigation list">
+  
+  
+    <li><a href="/carrot-css/documentation/">Getting started</a></li>
+  
+    <li><a href="/carrot-css/documentation/installation/">Installation</a></li>
+  
+    <li><a href="/carrot-css/documentation/css-variables/">CSS Variables</a></li>
+  
+    <li><a href="/carrot-css/documentation/theming/">Color and Theming</a></li>
+  
+    <li><a aria-current="page" href="/carrot-css/documentation/typography/">Typography</a></li>
+  
+    <li><a href="/carrot-css/documentation/layout-utilities/">Layout Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/utilities/">Utilities</a></li>
+  
+    <li><a href="/carrot-css/documentation/buttons/">Buttons</a></li>
+  
+    <li><a href="/carrot-css/documentation/forms/">Forms</a></li>
+  
+    <li><a href="/carrot-css/documentation/tables/">Tables</a></li>
+  
+</ul>
+    <div class="documentation__content stack">
+      <h1 id="typography">Typography</h1>
+<p>We want you to not struggle with setting nice base typographic rule.<br>
+You should only chose your font and be good to go.</p>
+<h2 id="the---measure-of-content">The <code>--measure</code> of content</h2>
+<p>This concept is largely inspired by this <a href="https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website">readability tutorial from piccalil.li</a>, and you can refer to the original post for more informations.</p>
+<p>The <code>--mesure</code> CSS variable hold the max width of paragraph. It garantee readability per default by limiting <code>p</code> and <code>li</code> to ~70 characters. It is set by default to <code>60ch</code>.</p>
+<p>The headings will be limited to ~30 character and that'll look great by default.</p>
+<p>You might not want that behavior, for that you can declare <code>--mesure: auto;</code> in your <code>:root</code> selector.</p>
+<h2 id="font-sizes">Font sizes</h2>
+<p>Carrot CSS defines the default text sizes, based on a ratio between sizes. The default ratio is <code>1.33</code>.<br>
+Here's a look at the default sizes:</p>
+<pre><code>:root {
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.33rem;
+  --size-600: 1.77rem;
+  --size-700: 2.36rem;
+  --size-800: 3.15rem;
+  --size-900: 4.2rem;
+}
+</code></pre>
+<p>There is one font for all the titles and one for the content.</p>
+<p>You can override the ratio by changing the <code>--font-ratio</code> CSS variable. <a href="/documentation/css-variables">More about CSS variables</a></p>
+<p>This is how title look and play together:</p>
+<div class="preview-dark stack">
+<p class="h1-like">Title 1</p>
+<p>Content after an h1.</p>
+<p class="h2-like">Title 2</p>
+<p>Content after an h2.</p>
+<p class="h3-like">Title 3</p>
+<p>Content after an h3.</p>
+<p class="h4-like">Title 4</p>
+<p>Content after an h4.</p>
+<p class="h5-like">Title 5</p>
+<p>Content after an h5.</p>
+</div>
+<h2 id="titles-aliases">Titles aliases</h2>
+<p>Sometimes you need an <code>H2</code> to look like an <code>H3</code>, so Carrot CSS provides classes to help you accomplish that:</p>
+<pre><code>&lt;h2 class=&quot;h3-like&quot;&gt;An H2 that looks like an H3&lt;/h2&gt;
+</code></pre>
+<p>You can use <code>h1-like</code>, <code>h2-like</code>, <code>h3-like</code>, <code>h4-like</code> and <code>h5-like</code> classes to make a <em>lookalike</em> element.</p>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  </body>
+</html>
