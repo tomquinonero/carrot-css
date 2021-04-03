@@ -23,6 +23,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
+          yarn
           yarn docsBuild
 
       - name: Deploy
