@@ -23,8 +23,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
-          npm run docsBuild
+          yarn docsBuild
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
