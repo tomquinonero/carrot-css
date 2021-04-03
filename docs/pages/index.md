@@ -4,12 +4,13 @@ permalink: /
 title: Welcome
 ---
 
-  <div class="center">
-    <div class="box">
-      
-      # Carrot CSS</h1>
-      ### The CSS library that gives you a good starting, some theming capabilities, the best utilities and all that in only `{{ libSize.libSize }}`!
-    </div>
+<div class="center">
+  <div class="box">
+    
+    # Carrot CSS</h1>
+    ### The CSS library that gives you a good starting, some theming capabilities, the best utilities and all that in only `{{ libSize.libSize }}`!
+    
   </div>
+</div>
 
 Carrot CSS is a CSS Starter or _micro-framework_, it is not a framework as it does and asssume way less, but this is not a reset, as it give you a sane basis for you to write your own CSS code.
