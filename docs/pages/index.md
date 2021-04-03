@@ -2,6 +2,7 @@
 layout: "main.njk"
 permalink: /
 title: Welcome
+containerClass: "page--home"
 ---
 
 <div class="center">
