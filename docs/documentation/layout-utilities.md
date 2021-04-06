@@ -10,7 +10,7 @@ This is great book and you should probably [buy it and read it](https://every-la
 It will make you understand better how CSS works.
 
 Carrot CSS provides utilities classes that comes from the book.
-No advanced documentation here, as it is available on the [every layout website](https://every-layout.dev/). Also there is gold free contrent there so even if you don't plan of buying the book, there is still a lot to learn!
+No advanced documentation here, as it is available on the [every layout website](https://every-layout.dev/). Also there is gold free content there so even if you don't plan of buying the book, there is still a lot to learn!
 
 ## The stack
 

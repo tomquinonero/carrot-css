@@ -28,7 +28,7 @@ A table of sega consoles
 </tbody>
 </table>
 
-Make a table vertical scrool by wrapping it in a container with the `reel` class. [Learn more about the reel layout utility](/documentation/layout-utilities/#the-reel).
+Make a table vertical scroll by wrapping it in a container with the `reel` class. [Learn more about the reel layout utility](/documentation/layout-utilities/#the-reel).
 
 <div class="reel">
 <table class="table text-nowrap" >

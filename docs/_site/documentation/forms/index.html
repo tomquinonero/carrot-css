@@ -51,13 +51,13 @@
       <h1 id="forms-element-reset">Forms element reset</h1>
 <p>Carrot CSS <em>does not</em> provide any <em>pre-made</em> form fields.<br>
 That's not the goal there, if you want to build a design system or a website you probably have some design for your fields.<br>
-And you might use an external library for custom selects and such, so the approach hewre is to not interfere with that.</p>
+And you might use an external library for custom selects and such, so the approach here is to not interfere with that.</p>
 <p>Carrot CSS <em>does</em> provides some reset for form elements form fields look more in place.<br>
 The reset itself just give you a sane base regarding margin and flow.</p>
 <p>Here's what is done:</p>
 <ul>
 <li>No border and margin for <code>fieldset</code>, so we can use them for grouping fields without interfering with the layout</li>
-<li><code>legend</code> looks like an h3, and titles utilitites classes (<code>.h1-like</code> to <code>h5-like</code>) can also be used</li>
+<li><code>legend</code> looks like an h3, and titles utilities classes (<code>.h1-like</code> to <code>h5-like</code>) can also be used</li>
 <li>All fields that <em>look like</em> <code>text</code> fields have consistent padding and a <code>rem</code> defined height. They also have <code>box-sizing: border-box</code>. The <code>--form-field-height</code> can be overwritten to change that value, or even to <code>auto</code> to handle your height differently, with <code>padding-top</code> and <code>padding-bottom</code> for example</li>
 <li><code>label</code>s are <code>inline-block</code> to handle margin and such</li>
 <li><code>textarea</code> have default padding and only vertical resizing is allowed</li>

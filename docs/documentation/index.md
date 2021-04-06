@@ -5,9 +5,9 @@ order: 1
 
 # Carrot CSS
 
-Carrot CSS is a **CSS Starter** or _micro-framework_, it is _not_ a framework as it does and asssume way less, but this is _more than_ a reset, as it give you a _sane boilerplate_ for you to write your own CSS code.
+Carrot CSS is a **CSS Starter** or _micro-framework_, it is _not_ a framework as it does and assume way less, but this is _more than_ a reset, as it give you a _sane boilerplate_ for you to write your own CSS code.
 
-If you want to write your CSS but you are tired of writting the same starter code on every projects, **Carrot CSS is for you!**
+If you want to write your CSS but you are tired of writing the same starter code on every projects, **Carrot CSS is for you!**
 If you want to write clean CSS that _actually_ scales and you want to be sure to get of on the right foot with your CSS, **Carrot CSS is for you!**
 
 Carrot CSS is a stable foundation for your projects, it is lightweight and CSS only. It use CSS variables and have built-in theme support, and the whole thing is understandable and easily customizable.
@@ -60,9 +60,9 @@ These helps you going faster. Great layout utilities from [Every Layout](https:/
 
 ### Theming & Customization
 
-We use CSS Variables to store palette color from _tailwind_, because they are nice. .
+We use CSS Variables to store palette color from _tailwind_, because they are nice.
 
-But we love how the design tokens gives you felxibility so we are _not_ using these palette colors directly in the CSS, but rather from the **Design Tokens** defined in the theme file.
+But we love how the design tokens gives you flexibility so we are _not_ using these palette colors directly in the CSS, but rather from the **Design Tokens** defined in the theme file.
 A **theme** is a _group of CSS variables_ that defines colors for the application.
 The tokens that are not related to colors exists also as CSS variables.
 To configure the tokens, you can use our [Variables template](#) that you can use to overwrite variables.
@@ -70,11 +70,11 @@ To configure the tokens, you can use our [Variables template](#) that you can us
 ### List of tools
 
 - A small reset: **[modern-css-reset](https://github.com/hankchizljaw/modern-css-reset)**
-- Some base CSS to improve **readability and vertical rythm**, largely inspired by this post: <https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website>
+- Some base CSS to improve **readability and vertical rhythm**, largely inspired by this post: <https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website>
 - Layouts utilities from the book **[Every Layout](https://every-layout.dev/)**
 - Some UI **Buttons** classes
 - Default pretty styles for **Forms Field**
 - [Tailwind CSS colors](https://tailwindcss.com/docs/customizing-colors), as **CSS variables**
-- A list of Design Tokens for colors, refering to _Tailwind_ palette, forming a **theme**
+- A list of Design Tokens for colors, referring to _Tailwind_ palette, forming a **theme**
 
 _...And not one line of JavaScript!_

@@ -39,7 +39,7 @@ Here's what it would like like:
 - `--font-headings` and `--font-body` are the font for your design
 - `--size-400` is the base size that'll be used to calculate the other `--size`s variables via the `--ratio` value. It should be using `rem`. Know that the root font size is `10px` so `1.4rem == 14px`. More about font sizes and ratio on the [Typography documentation page](/documentation/typography/)
 
-This should be the most of it but [refer to the documentation](/documentation/css-variables/) for more informations.
+This should be the most of it but [refer to the documentation](/documentation/css-variables/) for more information.
 
 ## Step 3: Colors and Theming
 
@@ -50,7 +50,7 @@ It'll make way more sense and will make the theme easily switchable!
 
 _A Carrot CSS theme is actually just a list of design tokens and their values._
 
-You should read [the theming documentation for more informations](#).
+You should read [the theming documentation for more information](#).
 
 To use Carrot CSS you don't need to create your own theme. You can probably just overwrite the `default` one and the `dark` one to put it your `interactive` colors.
 

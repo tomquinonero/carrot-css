@@ -7,7 +7,7 @@ order: 80
 
 Carrot-css provides you with a `button` class for you to use. It includes different semantic buttons, some different sizes and some outline.
 
-To use them you must use the `button` class _in addtion_ to any modifier you'll use. We use the [BEM methodology](http://getbem.com/introduction/) so modifier will all start with `button--`.
+To use them you must use the `button` class _in addition_ to any modifier you'll use. We use the [BEM methodology](http://getbem.com/introduction/) so modifier will all start with `button--`.
 
 ## Semantic buttons
 
@@ -54,7 +54,7 @@ Also you can use the `button--outline` class for an outline style. _Neutral and 
 
 </div>
 
-Disabled state can be apllied to the buttons via a `disabled` attribute, a `disabled` class or a `button--disabled` class. The preffered method should be the `disabled` **attribute** as it automatically exclude the button from keyboard navigation.
+Disabled state can be applied to the buttons via a `disabled` attribute, a `disabled` class or a `button--disabled` class. The preferred method should be the `disabled` **attribute** as it automatically exclude the button from keyboard navigation.
 
 <div class="preview cluster">
 
@@ -88,7 +88,7 @@ This is how `button--primary` could be overwritten:
 }
 ```
 
-If you want to handle the **outline** modifier you'll need to add the folowing to you CSS:
+If you want to handle the **outline** modifier you'll need to add the following to you CSS:
 
 ```css
 .button--outline.button--primary {

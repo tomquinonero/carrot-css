@@ -7,7 +7,7 @@ order: 90
 
 Carrot CSS _does not_ provide any _pre-made_ form fields.
 That's not the goal there, if you want to build a design system or a website you probably have some design for your fields.
-And you might use an external library for custom selects and such, so the approach hewre is to not interfere with that.
+And you might use an external library for custom selects and such, so the approach here is to not interfere with that.
 
 Carrot CSS _does_ provides some reset for form elements form fields look more in place.
 The reset itself just give you a sane base regarding margin and flow.
@@ -15,7 +15,7 @@ The reset itself just give you a sane base regarding margin and flow.
 Here's what is done:
 
 - No border and margin for `fieldset`, so we can use them for grouping fields without interfering with the layout
-- `legend` looks like an h3, and titles utilitites classes (`.h1-like` to `h5-like`) can also be used
+- `legend` looks like an h3, and titles utilities classes (`.h1-like` to `h5-like`) can also be used
 - All fields that _look like_ `text` fields have consistent padding and a `rem` defined height. They also have `box-sizing: border-box`. The `--form-field-height` can be overwritten to change that value, or even to `auto` to handle your height differently, with `padding-top` and `padding-bottom` for example
 - `label`s are `inline-block` to handle margin and such
 - `textarea` have default padding and only vertical resizing is allowed

@@ -52,4 +52,4 @@ You want to be able to overwrite values without _artificially_ bumping the [sele
 
 ## What to do now?
 
-You should probalby overwrite some CSS variables to make it your own and you should be good to go.See more on our [Getting Started guide](/getting-started/), check the [Documentation](/documentation) or just start coding 😀
+You should probably overwrite some CSS variables to make it your own and you should be good to go.See more on our [Getting Started guide](/getting-started/), check the [Documentation](/documentation) or just start coding 😀
