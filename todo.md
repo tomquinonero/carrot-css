@@ -1,11 +1,12 @@
 TODO:
 
 - proofreading
-- add link to files in documentation
 - build without buttons? without colors?
 
 DONE:
 
+- add link to files in documentation
+- spellcheck
 - README
 - deploy docs
 - implements button

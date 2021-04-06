@@ -9,6 +9,8 @@ Configuration is kept simple, you don't need to build anything.
 
 We just use CSS variable that you can overwrite.
 
+[See the variables file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/_variables.css)
+
 ## What you might want to overwrite
 
 Regarding fonts:

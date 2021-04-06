@@ -9,6 +9,8 @@ Carrot-css provides you with a `button` class for you to use. It includes differ
 
 To use them you must use the `button` class _in addition_ to any modifier you'll use. We use the [BEM methodology](http://getbem.com/introduction/) so modifier will all start with `button--`.
 
+[See `_buttons.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/_buttons.scss)
+
 ## Semantic buttons
 
 Rather than have classes with the name of colors like `button-red`, we provide _semantic_ names that define the **role** of the button.

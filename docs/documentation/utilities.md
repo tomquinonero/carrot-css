@@ -8,6 +8,8 @@ order: 60
 Carrot CSS provides you with a bunch of utility classes, _shadow_ for boxes and text, _font sizes_ and few text utilities.
 We do not provide more of them _on purpose_, as this is not the goal of the library. We want to stick to the minimum there.
 
+[See `_utilities_.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/_utilities_.scss)
+
 ## Font Sizes
 
 Classes from `font-size-300` to `font-size-900` are provided to apply these font sizes.

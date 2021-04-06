@@ -11,6 +11,8 @@ _From the [Bootstrap table documentation](https://getbootstrap.com/docs/5.0/cont
 
 In carrot CSS we'll act the same, so you'll need to be manually add the `table` class to the table you want to stylize.
 
+[See `_tables_.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/_tables_.scss)
+
 ## Examples
 
 A table of sega consoles

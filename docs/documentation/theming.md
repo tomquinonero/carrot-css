@@ -14,6 +14,9 @@ _From the [Design tokens documentation from Adobe design system](https://spectru
 Carrot CSS use design tokens so you'll use color named by their _usage_, not an actual _color name_.
 You'll use variables named like `--color-text-dark` or `--color-border` instead of `--dark-blue` or `--light-blue-200`.
 
+[See `themes/_default.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/themes/_default.css)
+[See `themes/_dark.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/themes/_dark.css)
+
 To make it to _your_ colors, you can create a theme or edit the existing ones, `default` and `dark`.
 
 ## The simple way: Customize existing themes

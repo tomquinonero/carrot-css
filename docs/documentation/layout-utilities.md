@@ -9,6 +9,8 @@ Layout utilities are **largely** inspired from the [every layout book](https://e
 This is great book and you should probably [buy it and read it](https://every-layout.dev/checkout/).
 It will make you understand better how CSS works.
 
+[See `_layout_utilities_.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/_layout_utilities_.scss)
+
 Carrot CSS provides utilities classes that comes from the book.
 No advanced documentation here, as it is available on the [every layout website](https://every-layout.dev/). Also there is gold free content there so even if you don't plan of buying the book, there is still a lot to learn!
 

@@ -9,6 +9,8 @@ Carrot CSS _does not_ provide any _pre-made_ form fields.
 That's not the goal there, if you want to build a design system or a website you probably have some design for your fields.
 And you might use an external library for custom selects and such, so the approach here is to not interfere with that.
 
+[See `_forms_.scss` file on Github](https://github.com/tomquinonero/carrot-css/blob/main/css/_forms_.scss)
+
 Carrot CSS _does_ provides some reset for form elements form fields look more in place.
 The reset itself just give you a sane base regarding margin and flow.
 
