@@ -1,6 +1,6 @@
 # Carrot CSS
 
-**Carrot CSS** is a CSS Starter or _micro-framework_, it is not a framework as it does and asssume way less, but this is more than a reset, as it give you a sane boilerplate for you to write your own CSS code.
+**Carrot CSS** is a CSS Starter or _micro-framework_, it is not a framework as it does and assume way less, but this is more than a reset, as it give you a sane boilerplate for you to write your own CSS code.
 
 [To know more please refer to the documentation](https://tomquinonero.github.io/carrot-css/)
 
