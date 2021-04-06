@@ -5,7 +5,7 @@ order: 1
 
 # Carrot CSS
 
-Carrot CSS is a **CSS Starter**, it is _not_ a framework as it does and asssume way less, but this is _not_ a reset, as it give you a sane basis for you to _write your own CSS code_.
+Carrot CSS is a **CSS Starter** or _micro-framework_, it is _not_ a framework as it does and asssume way less, but this is _more than_ a reset, as it give you a _sane boilerplate_ for you to write your own CSS code.
 
 If you want to write your CSS but you are tired of writting the same starter code on every projects, **Carrot CSS is for you!**
 If you want to write clean CSS that _actually_ scales and you want to be sure to get of on the right foot with your CSS, **Carrot CSS is for you!**
