@@ -2,6 +2,8 @@
 
 **Carrot CSS** is a CSS Starter or _micro-framework_, it is not a framework as it does and asssume way less, but this is more than a reset, as it give you a sane boilerplate for you to write your own CSS code.
 
+[To know more please refer to the documentation](https://tomquinonero.github.io/carrot-css/)
+
 # Why Carrot CSS ?
 
 Carrot CSS is a stable foundation for your projects, it is lightweight and CSS only. It use CSS variables and have built-in theme support, and the whole thing is understandable and easily customizable.

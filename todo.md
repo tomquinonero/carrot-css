@@ -1,14 +1,13 @@
 TODO:
 
 - proofreading
-- README
 - add link to files in documentation
-- deploy docs
 - build without buttons? without colors?
-- theming page
 
 DONE:
 
+- README
+- deploy docs
 - implements button
 - find out tokens
 - default look for tables
@@ -18,3 +17,4 @@ DONE:
 - shadows as vars and classes
 - default look for pre and code ?
 - disabled state for buttons
+- theming page

@@ -2,6 +2,27 @@
   --content-margin-top: 2rem;
 }
 
+// theme overwrite for intreractive color
+
+:root,
+.theme-default {
+  --color-interactive: var(--orange-400);
+  --color-interactive-light: var(--orange-300);
+  --color-interactive-lighter: var(--orange-200);
+  --color-interactive-dark: var(--orange-500);
+  --color-interactive-darker: var(--orange-600);
+  --color-interactive--reverse: var(--orange-50);
+}
+
+.theme-dark {
+  --color-interactive: var(--orange-400);
+  --color-interactive-light: var(--orange-300);
+  --color-interactive-lighter: var(--orange-200);
+  --color-interactive-dark: var(--orange-500);
+  --color-interactive-darker: var(--orange-600);
+  --color-interactive--reverse: var(--orange-50);
+}
+
 html,
 body {
   margin: 0;

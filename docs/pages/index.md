@@ -8,12 +8,11 @@ containerClass: "page--home"
 <div class="center">
   <div class="box" markdown="1">
 
-# Carrot CSS
-
 ### The CSS library that gives you a good starting, some theming capabilities, the best utilities and all that in only `{{ libSize.libSize }}`!
 
   </div>
 </div>
+
 <div class="center">
 
 **Carrot CSS** is a CSS Starter or _micro-framework_, it is not a framework as it does and asssume way less, but this is more than a reset, as it give you a sane boilerplate for you to write your own CSS code.
