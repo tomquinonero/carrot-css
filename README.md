@@ -23,7 +23,7 @@ This is not meant to stops you from writing CSS, but to start your CSS from a ri
 Start by adding this line to your `<head>`:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/carrot-css@0.2.6/dist/carrot.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/carrot-css/dist/carrot.min.css">
 ```
 
 You can also use a package manager, and we actually recommends that approach, [more on the Installation documentation](https://tomquinonero.github.io/carrot-css/documentation/installation/).
