@@ -69,27 +69,27 @@ h5,
 
 h1,
 .h1-like {
-  font-size: var(--size-700);
+  font-size: var(--size-800);
 }
 
 h2,
 .h2-like {
-  font-size: var(--size-600);
+  font-size: var(--size-700);
 }
 
 h3,
 .h3-like {
-  font-size: var(--size-500);
+  font-size: var(--size-600);
 }
 
 h4,
 .h4-like {
-  font-size: var(--size-400);
+  font-size: var(--size-500);
 }
 
 h5,
 .h5-like {
-  font-size: var(--size-300);
+  font-size: var(--size-400);
 }
 
 p,
@@ -114,14 +114,21 @@ pre {
 
 h1,
 .h1-like {
-  max-width: calc(var(--measure) / 3.5);
+  max-width: calc(var(--measure) / 2.5);
 }
 
 h2,
 .h2-like,
 h3,
 .h3-like {
-  max-width: calc(var(--measure) / 2.2);
+  max-width: calc(var(--measure) / 1.5);
+}
+
+h4,
+.h4-like,
+h5,
+.h5-like {
+  max-width: var(--measure);
 }
 
 // ============
