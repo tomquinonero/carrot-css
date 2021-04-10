@@ -37,7 +37,7 @@ Here's what it would like like:
 ```
 
 - `--font-headings` and `--font-body` are the font for your design
-- `--size-400` is the base size that'll be used to calculate the other `--size`s variables via the `--ratio` value. It should be using `rem`. Know that the root font size is `10px` so `1.4rem == 14px`. More about font sizes and ratio on the [Typography documentation page](/documentation/typography/)
+- `--size-400` is the base size that'll be used to calculate the other `--size`s variables via the `--font-ratio` value. It should be using `rem`. Know that the root font size is `10px` so `1.4rem == 14px`. More about font sizes and ratio on the [Typography documentation page](/documentation/typography/)
 
 This should be the most of it but [refer to the documentation](/documentation/css-variables/) for more information.
 

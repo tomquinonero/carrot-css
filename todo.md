@@ -2,6 +2,7 @@ TODO:
 
 - proofreading
 - build without buttons? without colors?
+- headings and paragraph margin system
 
 DONE:
 

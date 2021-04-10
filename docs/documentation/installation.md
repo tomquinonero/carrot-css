@@ -39,7 +39,7 @@ import "carrot-css"
 You can also use a CDN and get the last version:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/carrot-css@0.2.0/dist/carrot.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/carrot-css/dist/carrot.min.css">
 ```
 
 <div class="nota-bene">

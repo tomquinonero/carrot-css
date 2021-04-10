@@ -1,4 +1,9 @@
 // inspired by https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website
+
+// ============
+// Base setup
+// ============
+
 html {
   font-size: 10px;
 }
@@ -27,6 +32,10 @@ main:focus {
 [href]:hover {
   text-decoration: none;
 }
+
+// ============
+// Font sizes
+// ============
 
 h1,
 .h1-like,
@@ -70,22 +79,54 @@ h2,
 
 h3,
 .h3-like {
-  font-size: var(--size-600);
+  font-size: var(--size-500);
 }
 
 h4,
 .h4-like {
-  font-size: var(--size-500);
+  font-size: var(--size-400);
 }
 
 h5,
 .h5-like {
+  font-size: var(--size-300);
+}
+
+p,
+li {
   font-size: var(--size-400);
 }
 
+// ============
+// Apply measure as max widths
+// ============
+
 img {
-  max-width: calc(min(55rem, 100%));
+  max-width: calc(min(var(--measure), 100%));
+  height: auto;
 }
+
+p,
+li,
+pre {
+  max-width: var(--measure);
+}
+
+h1,
+.h1-like {
+  max-width: calc(var(--measure) / 3.5);
+}
+
+h2,
+.h2-like,
+h3,
+.h3-like {
+  max-width: calc(var(--measure) / 2.2);
+}
+
+// ============
+// Others
+// ============
 
 figcaption {
   font-size: var(--size-300);
@@ -109,23 +150,6 @@ table {
   color: var(--color-text);
 }
 
-p,
-li {
-  max-width: var(--measure);
-}
-
-h1,
-.h1-like {
-  max-width: calc(var(--measure) / 4);
-}
-
-h2,
-.h2-like,
-h3,
-.h3-like {
-  max-width: calc(var(--measure) / 2.2);
-}
-
 pre {
   max-height: 36em;
   overflow-y: auto;
@@ -145,28 +169,12 @@ code {
   font-size: 0.9em;
 }
 
+// ============
+// Responsiveness
+// ============
+
 @media (min-width: 45em) {
-  h1,
-  .h1-like {
-    font-size: var(--size-900);
-  }
-
-  h2,
-  .h2-like {
-    font-size: var(--size-700);
-  }
-
-  p,
-  li {
-    font-size: var(--size-500);
-  }
-
-  figcaption {
-    font-size: var(--size-400);
-  }
-
-  blockquote p {
-    font-size: var(--size-600);
-    max-width: calc(var(--measure) * 0.666);
+  :root {
+    --size-400: 2.1rem;
   }
 }
