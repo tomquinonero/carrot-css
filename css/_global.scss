@@ -114,14 +114,17 @@ pre {
 
 h1,
 .h1-like {
-  max-width: calc(var(--measure) / 2.35);
+  max-width: var(--measure-h1);
 }
 
 h2,
-.h2-like,
+.h2-like {
+  max-width: var(--measure-h2);
+}
+
 h3,
 .h3-like {
-  max-width: calc(var(--measure) / 1.9);
+  max-width: var(--measure-h3);
 }
 
 h4,
