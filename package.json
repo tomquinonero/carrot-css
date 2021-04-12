@@ -17,8 +17,7 @@
     "getColors": "node cli.js colors",
     "build": "node cli.js colors & node cli.js compile",
     "docs": "node cli.js cssToData & yarn eleventy --serve",
-    "docsBuild": "node cli.js cssToData & env NODE_ENV=production yarn eleventy --pathprefix 'carrot-css'",
-    "publish": "yarn build && yarn publish"
+    "docsBuild": "node cli.js cssToData & env NODE_ENV=production yarn eleventy --pathprefix 'carrot-css'"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
