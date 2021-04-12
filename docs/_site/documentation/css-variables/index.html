@@ -47,7 +47,7 @@
     <li><a href="/documentation/tables/">Tables</a></li>
   
 </ul>
-    <div class="documentation__content stack">
+    <div class="documentation__content stack text-container">
       <h1 id="css-variables">CSS variables</h1>
 <p>Configuration is kept simple, you don't need to build anything.</p>
 <p>We just use CSS variable that you can overwrite.</p>
@@ -71,7 +71,6 @@
 </thead>
 <tbody>
 <tr> <td>--border-thin</td><td>0.2rem</td></tr> 
-<tr> <td>--measure</td><td>60ch</td></tr> 
 <tr> <td>--form-field-height</td><td>2rem</td></tr> 
 <tr> <td>--font-headings</td><td>-apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif</td></tr> 
@@ -98,6 +97,10 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05)</td></tr> 
 <tr> <td>--box-shadow-extra-large</td><td>0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04)</td></tr> 
+<tr> <td>--measure</td><td>60ch</td></tr> 
+<tr> <td>--measure-h1</td><td>calc(var(--measure) * (var(--size-400) / var(--size-800)))</td></tr> 
+<tr> <td>--measure-h2</td><td>calc(var(--measure) * (var(--size-400) / var(--size-700)))</td></tr> 
+<tr> <td>--measure-h3</td><td>calc(var(--measure) * (var(--size-400) / var(--size-600)))</td></tr> 
 </tbody>
 </table>
 <style>

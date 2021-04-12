@@ -38,7 +38,4 @@
 
   /* Measures */
   --measure: 60ch;
-  --measure-h1: calc(var(--measure) * (var(--size-400) / var(--size-800)));
-  --measure-h2: calc(var(--measure) * (var(--size-400) / var(--size-700)));
-  --measure-h3: calc(var(--measure) * (var(--size-400) / var(--size-600)));
 }
