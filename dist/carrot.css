@@ -33,9 +33,6 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   /* Measures */
   --measure: 60ch;
-  --measure-h1: calc(var(--measure) * (var(--size-400) / var(--size-800)));
-  --measure-h2: calc(var(--measure) * (var(--size-400) / var(--size-700)));
-  --measure-h3: calc(var(--measure) * (var(--size-400) / var(--size-600)));
 }
 
 :root {
@@ -357,31 +354,27 @@ img {
   height: auto;
 }
 
-p,
-li,
-pre {
+.text-container p,
+.text-container li,
+.text-container pre {
   max-width: var(--measure);
 }
-
-h1,
-.h1-like {
-  max-width: var(--measure-h1);
+.text-container h1,
+.text-container .h1-like {
+  max-width: calc(var(--measure) / 4);
 }
-
-h2,
-.h2-like {
-  max-width: var(--measure-h2);
+.text-container h2,
+.text-container .h2-like {
+  max-width: calc(var(--measure) / 2.9);
 }
-
-h3,
-.h3-like {
-  max-width: var(--measure-h3);
+.text-container h3,
+.text-container .h3-like {
+  max-width: calc(var(--measure) / 1.85);
 }
-
-h4,
-.h4-like,
-h5,
-.h5-like {
+.text-container h4,
+.text-container .h4-like,
+.text-container h5,
+.text-container .h5-like {
   max-width: var(--measure);
 }
 
