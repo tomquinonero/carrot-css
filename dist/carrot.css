@@ -1054,6 +1054,7 @@ Icon size helper
   /* Text colors */
   --color-text: var(--warmGray-900);
   --color-text-light: var(--warmGray-700);
+  --color-text-lighter: var(--warmGray-600);
   --color-text-dark: var(--warmGray-900);
   /* Background colors */
   --color-background: var(--coolGray-100);
@@ -1094,6 +1095,7 @@ Icon size helper
   /* Text colors */
   --color-text: var(--warmGray-100);
   --color-text-light: var(--warmGray-200);
+  --color-text-lighter: var(--warmGray-300);
   --color-text-dark: var(--warmGray-100);
   /* Background colors */
   --color-background: var(--warmGray-800);

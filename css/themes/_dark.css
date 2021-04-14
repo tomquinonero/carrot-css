@@ -4,6 +4,7 @@
   /* Text colors */
   --color-text: var(--warmGray-100);
   --color-text-light: var(--warmGray-200);
+  --color-text-lighter: var(--warmGray-300);
   --color-text-dark: var(--warmGray-100);
 
   /* Background colors */
