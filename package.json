@@ -1,6 +1,6 @@
 {
   "name": "carrot-css",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "A simple CSS starter, that assume as less as possible",
   "main": "./dist/carrot.css",
   "style": "./dist/carrot.css",
