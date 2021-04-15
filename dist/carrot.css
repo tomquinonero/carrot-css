@@ -261,7 +261,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
@@ -287,6 +287,10 @@ main:focus {
 
 [href]:hover {
   text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
 }
 
 h1,
@@ -460,7 +464,7 @@ table {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  font-size: var(--size-500);
+  font-size: var(--size-400);
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
