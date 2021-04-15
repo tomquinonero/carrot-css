@@ -5,7 +5,7 @@
 // ============
 
 html {
-  font-size: 10px;
+  font-size: 62.5%; // SHould default to 10px, but scale with user selected size
 }
 
 body {
@@ -31,6 +31,10 @@ main:focus {
 
 [href]:hover {
   text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
 }
 
 // ============
