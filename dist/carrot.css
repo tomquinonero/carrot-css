@@ -1,4 +1,5 @@
-:root {
+:root,
+.font-init {
   /* Sizes */
   --border-thin: 0.2rem;
   --form-field-height: 2rem;
@@ -16,6 +17,9 @@
   --size-700: calc(var(--size-600) * var(--font-ratio));
   --size-800: calc(var(--size-700) * var(--font-ratio));
   --size-900: calc(var(--size-800) * var(--font-ratio));
+}
+
+:root {
   /* Spacing */
   --space: 0.2rem;
   --border-radius: 0.3rem;
